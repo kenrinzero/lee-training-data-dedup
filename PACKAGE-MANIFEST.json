@@ -149,8 +149,8 @@
       "sha256": "75164bc4f03a018fb50faf95ccf9810b870a28b0eeccb358f4ac0eaabeb48df6"
     },
     "README.md": {
-      "bytes": 3619,
-      "sha256": "3030c6d973a70b14ed45cfb066c5c6a95ea2b288e1be3ef5f142b2bf32233d4f"
+      "bytes": 3662,
+      "sha256": "880337064ac575a347957a50f9032882cdc5ea04c9733cd8443640245d2c79f8"
     },
     "REPORT-LICENSE": {
       "bytes": 386,
@@ -637,8 +637,8 @@
       "sha256": "54f20094a5b5c19246528536c5d428bbba673895955748919233d6e724ed6a79"
     },
     "src/stage7_publication.py": {
-      "bytes": 28601,
-      "sha256": "bd58633fe86e0600c358db9d2e5467d7a71310e2f07bf0479bb5f21462d19cea"
+      "bytes": 28644,
+      "sha256": "fffcc48d265863dba0c1944be997575c04895594d7af26806765121ba8ff79f1"
     },
     "src/verify_stage1.py": {
       "bytes": 9185,
@@ -669,8 +669,8 @@
       "sha256": "60a4e206f6b890210a6b08d1b7953b2487db8381aac79d0bc6a624a30c625ea8"
     },
     "src/verify_stage7_publication.py": {
-      "bytes": 8385,
-      "sha256": "00ff6dd882b6dd054bd41667642e7cd1cad0231aa0715dd9a7e7bcd2b289628d"
+      "bytes": 8698,
+      "sha256": "48e47884643acf0c63ff05e04943de7dd9e1386aa21df1726099b9f0b13165ce"
     },
     "STEP0_DERIVATIONS.md": {
       "bytes": 20032,

@@ -144,6 +144,11 @@ class PublicationContractTests(unittest.TestCase):
         self.assertNotIn(".venv/Scripts/python", readme)
         self.assertIn("duckdb==2.0.0", readme)
 
+    def test_readme_reader_link_is_public_site(self):
+        readme = (self.out / "README.md").read_text(encoding="utf-8")
+        self.assertIn("[Open the offline reader](https://kenrinzero.github.io/lee-training-data-dedup/)", readme)
+        self.assertNotIn("[Open the offline reader](index.html)", readme)
+
     def test_deterministic_build(self):
         first = {str(path.relative_to(self.out)): path.read_bytes() for path in self.out.rglob("*") if path.is_file()}
         second = {str(path.relative_to(self.other)): path.read_bytes() for path in self.other.rglob("*") if path.is_file()}

@@ -239,7 +239,7 @@ README = """# Lee et al.: duplication statistics against the released clusters
 A pre-registered, executable audit of Lee et al. (2022),
 *[Deduplicating Training Data Makes Language Models Better](https://doi.org/10.18653/v1/2022.acl-long.577)*.
 
-**[Open the offline reader](index.html)** · **[Read the integrated report](REPORT.md)** · **[Independent audit](AUDIT.md)**
+**[Open the offline reader](https://kenrinzero.github.io/lee-training-data-dedup/)** · **[Read the integrated report](REPORT.md)** · **[Independent audit](AUDIT.md)**
 
 ## Principal finding
 
