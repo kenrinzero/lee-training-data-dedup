@@ -76,6 +76,11 @@ def publication_language(text):
         "Publication is separately gated by the user.",
     ):
         text = text.replace(old, replacement)
+    if '<a href="https://github.com/kenrinzero/lee-training-data-dedup">Source repository</a>' not in text:
+        text = text.replace(
+            '<li><a href="#methods">Methods &amp; limits</a></li>',
+            '<li><a href="#methods">Methods &amp; limits</a></li><li><a href="https://github.com/kenrinzero/lee-training-data-dedup">Source repository</a></li>',
+        )
     return text
 
 
@@ -108,10 +113,11 @@ def refresh_run_receipts(out_dir):
         write_json(manifest_path, manifest)
     build_path = out_dir / "src/stage7_build.py"
     build_text = build_path.read_text(encoding="utf-8")
-    build_text = build_text.replace(
-        '        assert path.is_file(), f"missing frozen file: {relative}"\n        assert sha256(path) == freeze["sha256"][relative], f"frozen file hash changed: {relative}"',
-        '        if relative == "paper/paper.pdf" and not path.exists():\n            continue\n        assert path.is_file(), f"missing frozen file: {relative}"\n        assert sha256(path) == freeze["sha256"][relative], f"frozen file hash changed: {relative}"',
-    )
+    if 'if relative == "paper/paper.pdf" and not path.exists():' not in build_text:
+        build_text = build_text.replace(
+            '        assert path.is_file(), f"missing frozen file: {relative}"\n        assert sha256(path) == freeze["sha256"][relative], f"frozen file hash changed: {relative}"',
+            '        if relative == "paper/paper.pdf" and not path.exists():\n            continue\n        assert path.is_file(), f"missing frozen file: {relative}"\n        assert sha256(path) == freeze["sha256"][relative], f"frozen file hash changed: {relative}"',
+        )
     build_text = build_text.replace(
         '        "exact_hash_files_verified": len(exact_files),',
         '        "exact_hash_files_verified": len(exact_files) - (0 if (root / "paper/paper.pdf").is_file() else 1),',
@@ -134,9 +140,15 @@ def refresh_run_receipts(out_dir):
 
 
 def verify_manifest_outputs(run_dir, manifest):'''
-    build_text = build_text.replace("def verify_manifest_outputs(run_dir, manifest):", language_helper, 1)
+    if "def publication_language" not in build_text:
+        build_text = build_text.replace("def verify_manifest_outputs(run_dir, manifest):", language_helper, 1)
     build_text = build_text.replace('    return "".join(parts)', '    return publication_language("".join(parts))')
     build_text = build_text.replace('    return "\\n".join(lines)', '    return publication_language("\\n".join(lines))')
+    if "Source repository" not in build_text:
+        build_text = build_text.replace(
+            '<li><a href="#findings">Findings</a></li><li><a href="#figures">Figures</a></li><li><a href="#ledger">Claim ledger</a></li><li><a href="#methods">Methods &amp; limits</a></li>',
+            '<li><a href="#findings">Findings</a></li><li><a href="#figures">Figures</a></li><li><a href="#ledger">Claim ledger</a></li><li><a href="#methods">Methods &amp; limits</a></li><li><a href="https://github.com/kenrinzero/lee-training-data-dedup">Source repository</a></li>',
+        )
     assert 'excluded_sources' in build_text and 'and not path.exists()' in build_text
     write_text(build_path, build_text)
     verifier_path = out_dir / "src/verify_stage7.py"
@@ -391,7 +403,7 @@ def build_publication(root, out_dir):
         private = any(prefix in text for prefix in path_variants(root))
         if relative in reader_files:
             write_text(target, sanitize_text(text, root))
-            transform = "public package-boundary wording; dependent receipts refreshed"
+            transform = "reader repository link and package-boundary wording; dependent receipts refreshed"
         elif relative == "paper/PROVENANCE.md":
             write_text(target, sanitize_text(text, root))
             transform = "canonical ACL source link replaces excluded local PDF link"

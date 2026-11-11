@@ -32,8 +32,8 @@
       "sha256": "ea74045be20cb4997c88154b57807b82926cab987f673a2ee9f282d305089105"
     },
     "index.html": {
-      "bytes": 298002,
-      "sha256": "5ea000d3ddd9744aae774cfe9c5b45fdbcbac4c8f52a3e1411b7dee72041c04e"
+      "bytes": 298096,
+      "sha256": "21dd4f04a5755223667c21400323527b44ec3fa5ac566f40f644fc6678b4c8fa"
     },
     "input-manifest.json": {
       "bytes": 13017,
@@ -54,7 +54,7 @@
   },
   "code_sha256": {
     "stage1_audit.py": "8d49370a6aa213da76595b5671da458c6780fa466a8fefc89342505d963bdfae",
-    "stage7_build.py": "54f20094a5b5c19246528536c5d428bbba673895955748919233d6e724ed6a79",
+    "stage7_build.py": "e40a261dc6f223a3b6f2ea0ad1a9edd72ccdc61106c71705c9b3cc12b64b78da",
     "verify_stage7.py": "60a4e206f6b890210a6b08d1b7953b2487db8381aac79d0bc6a624a30c625ea8"
   }
 }

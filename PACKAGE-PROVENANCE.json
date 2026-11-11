@@ -557,7 +557,7 @@
     {
       "source": "results/stage7/run-001/audit/index.html",
       "exported": "results/stage7/run-001/audit/index.html",
-      "transform": "public package-boundary wording; dependent receipts refreshed"
+      "transform": "reader repository link and package-boundary wording; dependent receipts refreshed"
     },
     {
       "source": "results/stage7/run-001/audit/input-manifest.json",
@@ -577,7 +577,7 @@
     {
       "source": "results/stage7/run-001/audit/report.md",
       "exported": "results/stage7/run-001/audit/report.md",
-      "transform": "public package-boundary wording; dependent receipts refreshed"
+      "transform": "reader repository link and package-boundary wording; dependent receipts refreshed"
     },
     {
       "source": "results/stage7/run-001/audit/run-manifest.json",
@@ -627,7 +627,7 @@
     {
       "source": "results/stage7/run-002/audit/index.html",
       "exported": "results/stage7/run-002/audit/index.html",
-      "transform": "public package-boundary wording; dependent receipts refreshed"
+      "transform": "reader repository link and package-boundary wording; dependent receipts refreshed"
     },
     {
       "source": "results/stage7/run-002/audit/input-manifest.json",
@@ -647,7 +647,7 @@
     {
       "source": "results/stage7/run-002/audit/report.md",
       "exported": "results/stage7/run-002/audit/report.md",
-      "transform": "public package-boundary wording; dependent receipts refreshed"
+      "transform": "reader repository link and package-boundary wording; dependent receipts refreshed"
     },
     {
       "source": "results/stage7/run-002/audit/run-manifest.json",

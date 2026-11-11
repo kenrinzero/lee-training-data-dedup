@@ -149,6 +149,11 @@ class PublicationContractTests(unittest.TestCase):
         self.assertIn("[Open the offline reader](https://kenrinzero.github.io/lee-training-data-dedup/)", readme)
         self.assertNotIn("[Open the offline reader](index.html)", readme)
 
+    def test_reader_links_source_repository(self):
+        for relative in ("index.html", "results/stage7/run-001/audit/index.html", "results/stage7/run-002/audit/index.html"):
+            text = (self.out / relative).read_text(encoding="utf-8")
+            self.assertEqual(text.count('<a href="https://github.com/kenrinzero/lee-training-data-dedup">Source repository</a>'), 1)
+
     def test_deterministic_build(self):
         first = {str(path.relative_to(self.out)): path.read_bytes() for path in self.out.rglob("*") if path.is_file()}
         second = {str(path.relative_to(self.other)): path.read_bytes() for path in self.other.rglob("*") if path.is_file()}
