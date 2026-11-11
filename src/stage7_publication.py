@@ -424,6 +424,8 @@ def build_publication(root, out_dir):
         "results/stage7/run-002/audit/run-manifest.json": "sanitized outputs with recomputed code and output receipts",
         "src/stage7_build.py": "source-free public verifier adaptation; actual successful hash count",
         "src/verify_stage7.py": "source-free public fixture adaptation",
+        "src/stage7_publication.py": "VCS-aware publication verification",
+        "src/verify_stage7_publication.py": "public checkout test portability and VCS-aware verification",
     }
     for record in provenance:
         if record["source"] in transform_overrides:
