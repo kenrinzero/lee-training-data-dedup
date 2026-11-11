@@ -1,0 +1,9 @@
+{
+  "population": 365233500,
+  "evaluation_size": 364608,
+  "train_size": 364868892,
+  "expected_numerator": "5859223.55260572805972103758998352383330684415405889919380667",
+  "probability": "0.0160424045236971089993689998041897137948924295116929284794704",
+  "formula": "E[P_EE]=(1/N)*sum_s s*n_s*(1-C(T,s-1)/C(N-1,s-1))",
+  "evaluation": "uniform fixed-size validation split; secondary random-split check, distinct from observed EE"
+}

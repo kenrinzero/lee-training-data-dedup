@@ -1,0 +1,23 @@
+{
+  "section5_rounding": {
+    "printed_table2": "14.35%",
+    "printed_section5_3": "14.4%",
+    "verdict": "MATCH",
+    "basis": "printed ROUND_HALF_UP consistency, not reproduction of the unavailable split cell"
+  },
+  "tokens": {
+    "original": "NOT_EXECUTABLE_INPUT",
+    "neardup": "NOT_EXECUTABLE_INPUT"
+  },
+  "token_reason": "cluster IDs and assignments cannot reproduce the paper's 50k BPE token counts",
+  "split_free_ceiling": {
+    "derived_removals": 2782768,
+    "printed_difference_interval": {
+      "lower_exclusive": 2760000,
+      "upper_exclusive": 2780000
+    },
+    "verdict": "CEILING_COMPATIBLE",
+    "basis": "split-free keep-one ceiling; CEILING_COMPATIBLE is not a train-size match"
+  },
+  "table13_conditional_basis": "measured released archive rows, not a verified exact public original train size"
+}

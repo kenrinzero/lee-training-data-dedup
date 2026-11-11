@@ -1,0 +1,507 @@
+{
+  "stage": "Stage 1 / run-004",
+  "created_at": "2026-11-09T10:31:54.140249+00:00",
+  "command": [
+    "python.exe",
+    "src/stage1_audit.py",
+    "--out-dir",
+    "results/stage1/run-004/audit"
+  ],
+  "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "pyarrow": "26.0.1",
+  "csv_parser": "Python csv.reader(strict=True), UTF-8, exact physical rows",
+  "archive": {
+    "member": "wiki40b.csv",
+    "decompressed_bytes": 61018605,
+    "header": [
+      "id",
+      "keep",
+      "cluster"
+    ]
+  },
+  "split_revision": "06bfe584d8193cf58f79c6354ecc2a2b94a7deea",
+  "split_sizes": {
+    "train": 2926536,
+    "validation": 163597,
+    "test": 162274
+  },
+  "inputs": [
+    {
+      "local_path": ".\\data\\raw\\clusters\\wiki40b.tar.gz",
+      "url": "https://storage.googleapis.com/gresearch/data_deduplication/wiki40b.tar.gz",
+      "bytes": 26773963,
+      "expected_bytes": 26773963,
+      "sha256": "db1df97ef3268e0bdf36c15b66c4f71e4b465c42864f7c009104bb96bf8f8a32",
+      "expected_sha256": "db1df97ef3268e0bdf36c15b66c4f71e4b465c42864f7c009104bb96bf8f8a32",
+      "acquired_at": "2026-11-09T09:43:34.663319+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\test-00000-of-00002.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/test-00000-of-00002.parquet?download=true",
+      "bytes": 154017168,
+      "expected_bytes": 154017168,
+      "sha256": "402aff678586bc2c9b8a0678d10557dddeb77d4c73fae774a6196ed39acdbd23",
+      "expected_sha256": "402aff678586bc2c9b8a0678d10557dddeb77d4c73fae774a6196ed39acdbd23",
+      "acquired_at": "2026-11-09T09:54:44.696752+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\test-00001-of-00002.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/test-00001-of-00002.parquet?download=true",
+      "bytes": 155275430,
+      "expected_bytes": 155275430,
+      "sha256": "500c603bf6b1f73b88946947bb24a8b1413586d9090275d80d4fa8b14d0c92b4",
+      "expected_sha256": "500c603bf6b1f73b88946947bb24a8b1413586d9090275d80d4fa8b14d0c92b4",
+      "acquired_at": "2026-11-09T09:54:51.936626+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00000-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00000-of-00019.parquet?download=true",
+      "bytes": 292662109,
+      "expected_bytes": 292662109,
+      "sha256": "c78d07958f4c7a463cc69f849df3fa023ee4a8584581458fdf207cd245499a62",
+      "expected_sha256": "c78d07958f4c7a463cc69f849df3fa023ee4a8584581458fdf207cd245499a62",
+      "acquired_at": "2026-11-09T09:43:55.654245+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00001-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00001-of-00019.parquet?download=true",
+      "bytes": 293008855,
+      "expected_bytes": 293008855,
+      "sha256": "aeee305a291d62347342f0f9b550989d1e7b967f3cf5e1a01115ea8031f05288",
+      "expected_sha256": "aeee305a291d62347342f0f9b550989d1e7b967f3cf5e1a01115ea8031f05288",
+      "acquired_at": "2026-11-09T09:44:08.699593+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00002-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00002-of-00019.parquet?download=true",
+      "bytes": 292921438,
+      "expected_bytes": 292921438,
+      "sha256": "ef47da9985e8a929e27dfc94d15529d84dfb56e822fa6e146e92cae29e71ed4c",
+      "expected_sha256": "ef47da9985e8a929e27dfc94d15529d84dfb56e822fa6e146e92cae29e71ed4c",
+      "acquired_at": "2026-11-09T09:44:22.732650+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00003-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00003-of-00019.parquet?download=true",
+      "bytes": 293164247,
+      "expected_bytes": 293164247,
+      "sha256": "30f3486d4f006c5e4ce50a92f1873b6125434f2883dca25bbabfa16073210115",
+      "expected_sha256": "30f3486d4f006c5e4ce50a92f1873b6125434f2883dca25bbabfa16073210115",
+      "acquired_at": "2026-11-09T09:44:36.845621+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00004-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00004-of-00019.parquet?download=true",
+      "bytes": 291157463,
+      "expected_bytes": 291157463,
+      "sha256": "8594a95184849ab5b7dd75e494060e1b0d5e67e1e3f8bf486c410cf7a2910a9f",
+      "expected_sha256": "8594a95184849ab5b7dd75e494060e1b0d5e67e1e3f8bf486c410cf7a2910a9f",
+      "acquired_at": "2026-11-09T09:45:07.035055+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00005-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00005-of-00019.parquet?download=true",
+      "bytes": 293404780,
+      "expected_bytes": 293404780,
+      "sha256": "5a177308bc924a1a9f69d7721a3f1c937b5ffe03307edc1cd436ba6691a01ea6",
+      "expected_sha256": "5a177308bc924a1a9f69d7721a3f1c937b5ffe03307edc1cd436ba6691a01ea6",
+      "acquired_at": "2026-11-09T09:45:30.781821+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00006-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00006-of-00019.parquet?download=true",
+      "bytes": 290770171,
+      "expected_bytes": 290770171,
+      "sha256": "7cee50578a518e5652a578598bda09cb4c06c940a9c72494b97e5cd212585659",
+      "expected_sha256": "7cee50578a518e5652a578598bda09cb4c06c940a9c72494b97e5cd212585659",
+      "acquired_at": "2026-11-09T09:45:42.443641+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00007-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00007-of-00019.parquet?download=true",
+      "bytes": 294187640,
+      "expected_bytes": 294187640,
+      "sha256": "f32be8857f82d8d499139b885a8cf7be52dfe48194650ec66cee2b340abeb348",
+      "expected_sha256": "f32be8857f82d8d499139b885a8cf7be52dfe48194650ec66cee2b340abeb348",
+      "acquired_at": "2026-11-09T09:45:59.578759+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00008-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00008-of-00019.parquet?download=true",
+      "bytes": 293810591,
+      "expected_bytes": 293810591,
+      "sha256": "400378065d969322745173e1deca6a1aae6853fd8411ff73e11ba22e83717296",
+      "expected_sha256": "400378065d969322745173e1deca6a1aae6853fd8411ff73e11ba22e83717296",
+      "acquired_at": "2026-11-09T09:46:19.266653+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00009-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00009-of-00019.parquet?download=true",
+      "bytes": 292945249,
+      "expected_bytes": 292945249,
+      "sha256": "2dc4bf7fd00ef1a9d8fb36a232190c155e4da9d9815e4e27619bd6c5c1093342",
+      "expected_sha256": "2dc4bf7fd00ef1a9d8fb36a232190c155e4da9d9815e4e27619bd6c5c1093342",
+      "acquired_at": "2026-11-09T09:46:39.432579+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00010-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00010-of-00019.parquet?download=true",
+      "bytes": 293482891,
+      "expected_bytes": 293482891,
+      "sha256": "03fb7f5745d7a73bb5c0cafa4d7e69f9b5372a0e39ff70d16f2ec69dd85139ee",
+      "expected_sha256": "03fb7f5745d7a73bb5c0cafa4d7e69f9b5372a0e39ff70d16f2ec69dd85139ee",
+      "acquired_at": "2026-11-09T09:46:56.027759+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00011-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00011-of-00019.parquet?download=true",
+      "bytes": 292662959,
+      "expected_bytes": 292662959,
+      "sha256": "d15359299627a545d6f16a1d72fa3f5cd7211e55cc8d16d440f9d1bef68e6559",
+      "expected_sha256": "d15359299627a545d6f16a1d72fa3f5cd7211e55cc8d16d440f9d1bef68e6559",
+      "acquired_at": "2026-11-09T09:47:12.853061+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00012-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00012-of-00019.parquet?download=true",
+      "bytes": 292706728,
+      "expected_bytes": 292706728,
+      "sha256": "e39b4b0216e3809cf8b4fb4e0ffa57e44eba8b1f004e617a824a3220f7dc13eb",
+      "expected_sha256": "e39b4b0216e3809cf8b4fb4e0ffa57e44eba8b1f004e617a824a3220f7dc13eb",
+      "acquired_at": "2026-11-09T09:48:07.581464+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00013-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00013-of-00019.parquet?download=true",
+      "bytes": 291886673,
+      "expected_bytes": 291886673,
+      "sha256": "011253f235a2edc50ad6d4a2e1927e0659a56a80ec2248cb9401efcdf5da5819",
+      "expected_sha256": "011253f235a2edc50ad6d4a2e1927e0659a56a80ec2248cb9401efcdf5da5819",
+      "acquired_at": "2026-11-09T09:48:19.873632+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00014-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00014-of-00019.parquet?download=true",
+      "bytes": 293363797,
+      "expected_bytes": 293363797,
+      "sha256": "4b3938989329b8b36f0ffc3bebbb9651cb016393273399a035cd79d300821c10",
+      "expected_sha256": "4b3938989329b8b36f0ffc3bebbb9651cb016393273399a035cd79d300821c10",
+      "acquired_at": "2026-11-09T09:48:31.564712+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00015-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00015-of-00019.parquet?download=true",
+      "bytes": 292255533,
+      "expected_bytes": 292255533,
+      "sha256": "d520a0d971da45ee1bd848186323418f6e04d84d22a0ae7110bb7ae8d05cbae1",
+      "expected_sha256": "d520a0d971da45ee1bd848186323418f6e04d84d22a0ae7110bb7ae8d05cbae1",
+      "acquired_at": "2026-11-09T09:48:42.359884+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00016-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00016-of-00019.parquet?download=true",
+      "bytes": 292266499,
+      "expected_bytes": 292266499,
+      "sha256": "e590518067af825b4c178876c7f3fae55f51b913c9f86a78759e6d843e9e2a9d",
+      "expected_sha256": "e590518067af825b4c178876c7f3fae55f51b913c9f86a78759e6d843e9e2a9d",
+      "acquired_at": "2026-11-09T09:48:53.208013+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00017-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00017-of-00019.parquet?download=true",
+      "bytes": 292483305,
+      "expected_bytes": 292483305,
+      "sha256": "a2ad8596b02585d336a4ecab77d894616f3151715d19fdba6972c101633fb60b",
+      "expected_sha256": "a2ad8596b02585d336a4ecab77d894616f3151715d19fdba6972c101633fb60b",
+      "acquired_at": "2026-11-09T09:49:06.793821+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\train-00018-of-00019.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/train-00018-of-00019.parquet?download=true",
+      "bytes": 293064118,
+      "expected_bytes": 293064118,
+      "sha256": "b67c2e9a970a4fc0053224af5a08e586ba09e769ef1ea7c411e2f3dcba64b06a",
+      "expected_sha256": "b67c2e9a970a4fc0053224af5a08e586ba09e769ef1ea7c411e2f3dcba64b06a",
+      "acquired_at": "2026-11-09T09:49:18.223212+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\validation-00000-of-00002.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/validation-00000-of-00002.parquet?download=true",
+      "bytes": 155816478,
+      "expected_bytes": 155816478,
+      "sha256": "9021e6e064e10fbfb972ab6e2a3bb07a7074b94448b5782da40d44a1c5ee7130",
+      "expected_sha256": "9021e6e064e10fbfb972ab6e2a3bb07a7074b94448b5782da40d44a1c5ee7130",
+      "acquired_at": "2026-11-09T09:54:09.073459+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    },
+    {
+      "local_path": ".\\data\\raw\\wiki40b\\en\\validation-00001-of-00002.parquet",
+      "url": "https://huggingface.co/datasets/google/wiki40b/resolve/06bfe584d8193cf58f79c6354ecc2a2b94a7deea/en/validation-00001-of-00002.parquet?download=true",
+      "bytes": 156517783,
+      "expected_bytes": 156517783,
+      "sha256": "fccd1ba95bbac574fe4d4f931783a96e2cd80e94b1f2a2e6ffde3bc46c2418a0",
+      "expected_sha256": "fccd1ba95bbac574fe4d4f931783a96e2cd80e94b1f2a2e6ffde3bc46c2418a0",
+      "acquired_at": "2026-11-09T09:54:37.704725+00:00",
+      "rights": "Source terms are not established as unrestricted redistribution rights; keep raw inputs local."
+    }
+  ],
+  "parquet": [
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\test-00000-of-00002.parquet",
+      "rows": 81137,
+      "metadata_rows": 81137,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\test-00001-of-00002.parquet",
+      "rows": 81137,
+      "metadata_rows": 81137,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00000-of-00019.parquet",
+      "rows": 154029,
+      "metadata_rows": 154029,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00001-of-00019.parquet",
+      "rows": 154029,
+      "metadata_rows": 154029,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00002-of-00019.parquet",
+      "rows": 154029,
+      "metadata_rows": 154029,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00003-of-00019.parquet",
+      "rows": 154029,
+      "metadata_rows": 154029,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00004-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00005-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00006-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00007-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00008-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00009-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00010-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00011-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00012-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00013-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00014-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00015-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00016-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00017-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\train-00018-of-00019.parquet",
+      "rows": 154028,
+      "metadata_rows": 154028,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\validation-00000-of-00002.parquet",
+      "rows": 81799,
+      "metadata_rows": 81799,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    },
+    {
+      "path": ".\\data\\raw\\wiki40b\\en\\validation-00001-of-00002.parquet",
+      "rows": 81798,
+      "metadata_rows": 81798,
+      "columns": [
+        "wikidata_id",
+        "text",
+        "version_id"
+      ]
+    }
+  ],
+  "code_sha256": {
+    "src/stage1_audit.py": "8d49370a6aa213da76595b5671da458c6780fa466a8fefc89342505d963bdfae",
+    "src/stage1_compare.py": "8dd2cb0a123456052b84bf0234cb75ec9658e41fa344ee27ef67e519ca083894"
+  }
+}

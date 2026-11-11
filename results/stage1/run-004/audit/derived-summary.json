@@ -1,0 +1,45 @@
+{
+  "physical_rows": 3252407,
+  "unique_ids": 3252407,
+  "unique_clusters": 3234610,
+  "duplicate_released_ids": 0,
+  "duplicate_released_rows": 0,
+  "malformed_rows": 0,
+  "empty_field_rows": 0,
+  "row_order": "physical released CSV order; one-based data row numbers in diagnostics",
+  "population": "released archive, all splits",
+  "keep_agreement": {
+    "keep0_multi": 23519,
+    "keep0_singleton": 0,
+    "keep1_multi": 0,
+    "keep1_singleton": 3228888
+  },
+  "keep_discrepancy_rows": 0,
+  "split_join": {
+    "status": "COMPLETE",
+    "public_physical_counts": {
+      "train": 2926536,
+      "validation": 163597,
+      "test": 162274
+    },
+    "public_unique_keys": 3252407,
+    "duplicate_public_keys": 0,
+    "duplicate_public_rows": 0,
+    "cross_split_public_keys": 0,
+    "unmatched_released_rows": 0,
+    "cross_split_released_rows": 0,
+    "missing_public_keys": 0,
+    "missing_public_rows": 0,
+    "population_balance": {
+      "train": 2926536,
+      "validation": 163597,
+      "test": 162274
+    },
+    "expected_population_balance": {
+      "train": 2926536,
+      "validation": 163597,
+      "test": 162274
+    },
+    "estimand": "released-physical-row weighted"
+  }
+}

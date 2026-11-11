@@ -1,0 +1,20 @@
+# SDD ledger — plan: PREREGISTRATION.md §10–§12 (FROZEN v1)
+
+Run-002 supersedes run-001 after fresh-context scientific and reader review. The reviewer independently supported every numerical result and found two Important issues: stale public status documents and incomplete custody verification.
+
+Final: fixed accepted-source custody — `test_coordinated_accepted_output_and_manifest_change_is_rejected` RED→GREEN; `verify_run` now compares freshly computed accepted-source receipts with the candidate input manifest.
+Final: fixed complete artifact/code verification — `test_non_html_output_and_manifest_change_is_rejected` RED→GREEN; CSV, JSON and standalone SVG outputs are regenerated and compared, and every recorded code hash including `verify_stage7.py` is checked.
+Final: fixed run identity — `test_end_to_end_run_identity_receipts_and_encoding` RED→GREEN; requested run names flow into the report, manifest and verification.
+Final: minor (deferred): the RealNews zero-eligibility diagnostic uses MISMATCH beside an exact-ID/host-level qualification; preserve the diagnostic but consider NOT_EXECUTABLE_INPUT in a future reader correction.
+Final: minor (deferred): exact H1/lede wording is not yet regression-pinned, although values and material qualifiers are tested.
+Final: minor (deferred): historical Stage 1 run-004 report line 15 retains an absolute workstation path, already deferred in its own ledger; leave the immutable report unchanged and exclude it from any public package or supply a relative-path public copy later.
+Final: Ruling: preserve run-001 and execute run-002 for changed verifier code identity — immutable receipts forbid editing run-001 — cost if wrong: the reviewed candidate and correction lineage remain available.
+Final: Ruling: no numerical artifact changes are required — independent review re-derived all sampled results without discrepancy — cost if wrong: ledger/figure public outputs should remain byte-identical apart from run-specific report text and manifests.
+
+Execution: build run-002, run the strengthened 13-test suite and full read-only verifier, update non-immutable public status documentation to the final candidate, and repeat failed reader checks.
+
+Final: fixed stale public status — README, SCOPE, src/README and results/README now name Stage 7 run-002, link the default offline reader and remove pre-Stage-7 work-order language.
+Final verification: 13/13 Stage 7 fixtures PASS; complete deterministic reader/ledger/figure/input/output/code verification PASS without modification; nine numerical/reader artifacts byte-identical between run-001 and run-002; actual overwrite refusal preserved bytes; accepted Stage 1–3 report verifiers PASS; cold-disk full Stage 1–3 hash and numerical verification PASS in run-001/cold-disk-verification.log; Second Reader 708/708 links and 49/49 encoding checks clean.
+Final browser verification: desktop and 390px responsive rendering, dropped/low convention switching, one-result and zero-result ledger filtering, unique anchors, 302 relative file links and keyboard skip-link focus all PASS on the byte-identical reader. The fresh-context reviewer did not independently repeat live browser interaction.
+Final review: fresh-context agent-0 independently re-derived C4 Table 2, both random-split bases, Table 13 rules, all 99 figure bars and edges, Wiki arms/removals, RealNews ceiling and Step-0 bounds with zero numerical discrepancies. Its two Important findings are fixed and verified above. Three Minor items are deferred above. No Critical or Important finding remains open. Independence is same-family fresh context, not human conceptual replication.
+Stage 7 completion: ACCEPT run-002 as the final candidate. The offline reader covers all 193 printed-oracle rows in 286 entries, all released figure conventions, exact omitted edges, non-executable reasons and external context. README, SCOPE, implementation/results state and the complete report agree. Publication, raw redistribution and deferred Stages 4–6 remain separate user decisions.

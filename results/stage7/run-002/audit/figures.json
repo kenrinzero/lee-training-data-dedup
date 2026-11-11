@@ -1,0 +1,1032 @@
+{
+  "panels": [
+    {
+      "id": "fig1-c4",
+      "title": "Figure 1 — C4",
+      "corpus": "C4",
+      "released": true,
+      "population": "released archive, all splits",
+      "primary": "dropped",
+      "conventions": {
+        "dropped": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig1-c4-bin-01",
+            "printed_count": 348320475,
+            "derived_count": 348320475,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig1-c4-bin-02",
+            "printed_count": 1861744,
+            "derived_count": 1861744,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig1-c4-bin-03",
+            "printed_count": 292575,
+            "derived_count": 292575,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig1-c4-bin-04",
+            "printed_count": 109853,
+            "derived_count": 109853,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig1-c4-bin-05",
+            "printed_count": 54984,
+            "derived_count": 54984,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig1-c4-bin-06",
+            "printed_count": 85567,
+            "derived_count": 85567,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig1-c4-bin-07",
+            "printed_count": 42723,
+            "derived_count": 42723,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig1-c4-bin-08",
+            "printed_count": 28446,
+            "derived_count": 28446,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig1-c4-bin-09",
+            "printed_count": 23094,
+            "derived_count": 23094,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig1-c4-bin-10",
+            "printed_count": 2782,
+            "derived_count": 2782,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig1-c4-bin-11",
+            "printed_count": 280,
+            "derived_count": 280,
+            "verdict": "MATCH"
+          }
+        ],
+        "low": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig1-c4-bin-01",
+            "printed_count": 348320475,
+            "derived_count": 348320475,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig1-c4-bin-02",
+            "printed_count": 1861744,
+            "derived_count": 1861744,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig1-c4-bin-03",
+            "printed_count": 292575,
+            "derived_count": 292575,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig1-c4-bin-04",
+            "printed_count": 109853,
+            "derived_count": 109853,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig1-c4-bin-05",
+            "printed_count": 54984,
+            "derived_count": 54984,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig1-c4-bin-06",
+            "printed_count": 85567,
+            "derived_count": 95541,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig1-c4-bin-07",
+            "printed_count": 42723,
+            "derived_count": 45123,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig1-c4-bin-08",
+            "printed_count": 28446,
+            "derived_count": 29234,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig1-c4-bin-09",
+            "printed_count": 23094,
+            "derived_count": 23098,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig1-c4-bin-10",
+            "printed_count": 2782,
+            "derived_count": 2782,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig1-c4-bin-11",
+            "printed_count": 280,
+            "derived_count": 280,
+            "verdict": "MATCH"
+          }
+        ],
+        "high": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig1-c4-bin-01",
+            "printed_count": 348320475,
+            "derived_count": 348320475,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig1-c4-bin-02",
+            "printed_count": 1861744,
+            "derived_count": 1861744,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig1-c4-bin-03",
+            "printed_count": 292575,
+            "derived_count": 292575,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig1-c4-bin-04",
+            "printed_count": 109853,
+            "derived_count": 109853,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig1-c4-bin-05",
+            "printed_count": 54984,
+            "derived_count": 54984,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig1-c4-bin-06",
+            "printed_count": 85567,
+            "derived_count": 85567,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig1-c4-bin-07",
+            "printed_count": 42723,
+            "derived_count": 52697,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig1-c4-bin-08",
+            "printed_count": 28446,
+            "derived_count": 30846,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig1-c4-bin-09",
+            "printed_count": 23094,
+            "derived_count": 23882,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig1-c4-bin-10",
+            "printed_count": 2782,
+            "derived_count": 2786,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig1-c4-bin-11",
+            "printed_count": 280,
+            "derived_count": 280,
+            "verdict": "MATCH"
+          }
+        ]
+      },
+      "match_counts": {
+        "dropped": 11,
+        "low": 7,
+        "high": 7
+      },
+      "edges": [
+        {
+          "cluster_size": 10,
+          "cluster_count": 9974,
+          "document_count": 99740
+        },
+        {
+          "cluster_size": 20,
+          "cluster_count": 2400,
+          "document_count": 48000
+        },
+        {
+          "cluster_size": 50,
+          "cluster_count": 788,
+          "document_count": 39400
+        },
+        {
+          "cluster_size": 500,
+          "cluster_count": 4,
+          "document_count": 2000
+        },
+        {
+          "cluster_size": 5000,
+          "cluster_count": 0,
+          "document_count": 0
+        }
+      ],
+      "source_path": "results/stage2/run-004/audit/figure-verdicts.csv"
+    },
+    {
+      "id": "fig8-realnews",
+      "title": "Figure 8 middle — RealNews",
+      "corpus": "RealNews",
+      "released": true,
+      "population": "released archive, all splits",
+      "primary": "dropped",
+      "conventions": {
+        "dropped": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig8-realnews-bin-01",
+            "printed_count": 27917044,
+            "derived_count": 27917044,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig8-realnews-bin-02",
+            "printed_count": 1715379,
+            "derived_count": 1715379,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig8-realnews-bin-03",
+            "printed_count": 231913,
+            "derived_count": 231913,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig8-realnews-bin-04",
+            "printed_count": 89017,
+            "derived_count": 89017,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig8-realnews-bin-05",
+            "printed_count": 34487,
+            "derived_count": 34487,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig8-realnews-bin-06",
+            "printed_count": 24889,
+            "derived_count": 24889,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig8-realnews-bin-07",
+            "printed_count": 1150,
+            "derived_count": 1150,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig8-realnews-bin-08",
+            "printed_count": 243,
+            "derived_count": 243,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig8-realnews-bin-09",
+            "printed_count": 129,
+            "derived_count": 129,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig8-realnews-bin-10",
+            "printed_count": 11,
+            "derived_count": 11,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig8-realnews-bin-11",
+            "printed_count": 0,
+            "derived_count": 0,
+            "verdict": "MATCH"
+          }
+        ],
+        "low": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig8-realnews-bin-01",
+            "printed_count": 27917044,
+            "derived_count": 27917044,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig8-realnews-bin-02",
+            "printed_count": 1715379,
+            "derived_count": 1715379,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig8-realnews-bin-03",
+            "printed_count": 231913,
+            "derived_count": 231913,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig8-realnews-bin-04",
+            "printed_count": 89017,
+            "derived_count": 89017,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig8-realnews-bin-05",
+            "printed_count": 34487,
+            "derived_count": 34487,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig8-realnews-bin-06",
+            "printed_count": 24889,
+            "derived_count": 25592,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig8-realnews-bin-07",
+            "printed_count": 1150,
+            "derived_count": 1174,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig8-realnews-bin-08",
+            "printed_count": 243,
+            "derived_count": 249,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig8-realnews-bin-09",
+            "printed_count": 129,
+            "derived_count": 129,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig8-realnews-bin-10",
+            "printed_count": 11,
+            "derived_count": 11,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig8-realnews-bin-11",
+            "printed_count": 0,
+            "derived_count": 0,
+            "verdict": "MATCH"
+          }
+        ],
+        "high": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig8-realnews-bin-01",
+            "printed_count": 27917044,
+            "derived_count": 27917044,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig8-realnews-bin-02",
+            "printed_count": 1715379,
+            "derived_count": 1715379,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig8-realnews-bin-03",
+            "printed_count": 231913,
+            "derived_count": 231913,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig8-realnews-bin-04",
+            "printed_count": 89017,
+            "derived_count": 89017,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig8-realnews-bin-05",
+            "printed_count": 34487,
+            "derived_count": 34487,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig8-realnews-bin-06",
+            "printed_count": 24889,
+            "derived_count": 24889,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig8-realnews-bin-07",
+            "printed_count": 1150,
+            "derived_count": 1853,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig8-realnews-bin-08",
+            "printed_count": 243,
+            "derived_count": 267,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig8-realnews-bin-09",
+            "printed_count": 129,
+            "derived_count": 135,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig8-realnews-bin-10",
+            "printed_count": 11,
+            "derived_count": 11,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig8-realnews-bin-11",
+            "printed_count": 0,
+            "derived_count": 0,
+            "verdict": "MATCH"
+          }
+        ]
+      },
+      "match_counts": {
+        "dropped": 11,
+        "low": 8,
+        "high": 8
+      },
+      "edges": [
+        {
+          "cluster_size": 10,
+          "cluster_count": 703,
+          "document_count": 7030
+        },
+        {
+          "cluster_size": 20,
+          "cluster_count": 24,
+          "document_count": 480
+        },
+        {
+          "cluster_size": 50,
+          "cluster_count": 6,
+          "document_count": 300
+        },
+        {
+          "cluster_size": 500,
+          "cluster_count": 0,
+          "document_count": 0
+        },
+        {
+          "cluster_size": 5000,
+          "cluster_count": 0,
+          "document_count": 0
+        }
+      ],
+      "source_path": "results/stage3/run-002/audit/figure-verdicts.csv"
+    },
+    {
+      "id": "fig8-wiki40b",
+      "title": "Figure 8 bottom — Wiki-40B",
+      "corpus": "Wiki-40B",
+      "released": true,
+      "population": "released archive, all splits",
+      "primary": "dropped",
+      "conventions": {
+        "dropped": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig8-wiki40b-bin-01",
+            "printed_count": 3228888,
+            "derived_count": 3228888,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig8-wiki40b-bin-02",
+            "printed_count": 3557,
+            "derived_count": 3557,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig8-wiki40b-bin-03",
+            "printed_count": 833,
+            "derived_count": 833,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig8-wiki40b-bin-04",
+            "printed_count": 399,
+            "derived_count": 399,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig8-wiki40b-bin-05",
+            "printed_count": 245,
+            "derived_count": 245,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig8-wiki40b-bin-06",
+            "printed_count": 391,
+            "derived_count": 391,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig8-wiki40b-bin-07",
+            "printed_count": 163,
+            "derived_count": 163,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig8-wiki40b-bin-08",
+            "printed_count": 60,
+            "derived_count": 60,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig8-wiki40b-bin-09",
+            "printed_count": 24,
+            "derived_count": 24,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig8-wiki40b-bin-10",
+            "printed_count": 1,
+            "derived_count": 1,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig8-wiki40b-bin-11",
+            "printed_count": 0,
+            "derived_count": 0,
+            "verdict": "MATCH"
+          }
+        ],
+        "low": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig8-wiki40b-bin-01",
+            "printed_count": 3228888,
+            "derived_count": 3228888,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig8-wiki40b-bin-02",
+            "printed_count": 3557,
+            "derived_count": 3557,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig8-wiki40b-bin-03",
+            "printed_count": 833,
+            "derived_count": 833,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig8-wiki40b-bin-04",
+            "printed_count": 399,
+            "derived_count": 399,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig8-wiki40b-bin-05",
+            "printed_count": 245,
+            "derived_count": 245,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig8-wiki40b-bin-06",
+            "printed_count": 391,
+            "derived_count": 430,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig8-wiki40b-bin-07",
+            "printed_count": 163,
+            "derived_count": 173,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig8-wiki40b-bin-08",
+            "printed_count": 60,
+            "derived_count": 60,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig8-wiki40b-bin-09",
+            "printed_count": 24,
+            "derived_count": 24,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig8-wiki40b-bin-10",
+            "printed_count": 1,
+            "derived_count": 1,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig8-wiki40b-bin-11",
+            "printed_count": 0,
+            "derived_count": 0,
+            "verdict": "MATCH"
+          }
+        ],
+        "high": [
+          {
+            "bin_index": 1,
+            "bin_label": "1",
+            "target_id": "fig8-wiki40b-bin-01",
+            "printed_count": 3228888,
+            "derived_count": 3228888,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 2,
+            "bin_label": "2",
+            "target_id": "fig8-wiki40b-bin-02",
+            "printed_count": 3557,
+            "derived_count": 3557,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 3,
+            "bin_label": "3",
+            "target_id": "fig8-wiki40b-bin-03",
+            "printed_count": 833,
+            "derived_count": 833,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 4,
+            "bin_label": "4",
+            "target_id": "fig8-wiki40b-bin-04",
+            "printed_count": 399,
+            "derived_count": 399,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 5,
+            "bin_label": "5",
+            "target_id": "fig8-wiki40b-bin-05",
+            "printed_count": 245,
+            "derived_count": 245,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 6,
+            "bin_label": "[6, 10)",
+            "target_id": "fig8-wiki40b-bin-06",
+            "printed_count": 391,
+            "derived_count": 391,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 7,
+            "bin_label": "[11, 20)",
+            "target_id": "fig8-wiki40b-bin-07",
+            "printed_count": 163,
+            "derived_count": 202,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 8,
+            "bin_label": "[21, 50)",
+            "target_id": "fig8-wiki40b-bin-08",
+            "printed_count": 60,
+            "derived_count": 70,
+            "verdict": "MISMATCH"
+          },
+          {
+            "bin_index": 9,
+            "bin_label": "[51, 500)",
+            "target_id": "fig8-wiki40b-bin-09",
+            "printed_count": 24,
+            "derived_count": 24,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 10,
+            "bin_label": "[501, 5000)",
+            "target_id": "fig8-wiki40b-bin-10",
+            "printed_count": 1,
+            "derived_count": 1,
+            "verdict": "MATCH"
+          },
+          {
+            "bin_index": 11,
+            "bin_label": "[5001, ∞)",
+            "target_id": "fig8-wiki40b-bin-11",
+            "printed_count": 0,
+            "derived_count": 0,
+            "verdict": "MATCH"
+          }
+        ]
+      },
+      "match_counts": {
+        "dropped": 11,
+        "low": 9,
+        "high": 9
+      },
+      "edges": [
+        {
+          "cluster_size": 10,
+          "cluster_count": 39,
+          "document_count": 390
+        },
+        {
+          "cluster_size": 20,
+          "cluster_count": 10,
+          "document_count": 200
+        },
+        {
+          "cluster_size": 50,
+          "cluster_count": 0,
+          "document_count": 0
+        },
+        {
+          "cluster_size": 500,
+          "cluster_count": 0,
+          "document_count": 0
+        },
+        {
+          "cluster_size": 5000,
+          "cluster_count": 0,
+          "document_count": 0
+        }
+      ],
+      "source_path": "results/stage1/run-004/audit/figure-verdicts.csv"
+    },
+    {
+      "id": "fig8-lm1b",
+      "title": "Figure 8 top — LM1B (printed only)",
+      "corpus": "LM1B",
+      "released": false,
+      "population": "printed bars; split not stated",
+      "printed_counts": [
+        {
+          "bin_index": 1,
+          "bin_label": "1",
+          "target_id": "fig8-lm1b-bin-01",
+          "printed_count": 29096827,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 2,
+          "bin_label": "2",
+          "target_id": "fig8-lm1b-bin-02",
+          "printed_count": 595632,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 3,
+          "bin_label": "3",
+          "target_id": "fig8-lm1b-bin-03",
+          "printed_count": 68775,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 4,
+          "bin_label": "4",
+          "target_id": "fig8-lm1b-bin-04",
+          "printed_count": 15825,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 5,
+          "bin_label": "5",
+          "target_id": "fig8-lm1b-bin-05",
+          "printed_count": 4432,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 6,
+          "bin_label": "[6, 10)",
+          "target_id": "fig8-lm1b-bin-06",
+          "printed_count": 2762,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 7,
+          "bin_label": "[11, 20)",
+          "target_id": "fig8-lm1b-bin-07",
+          "printed_count": 340,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 8,
+          "bin_label": "[21, 50)",
+          "target_id": "fig8-lm1b-bin-08",
+          "printed_count": 66,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 9,
+          "bin_label": "[51, 500)",
+          "target_id": "fig8-lm1b-bin-09",
+          "printed_count": 13,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 10,
+          "bin_label": "[501, 5000)",
+          "target_id": "fig8-lm1b-bin-10",
+          "printed_count": 0,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        },
+        {
+          "bin_index": 11,
+          "bin_label": "[5001, ∞)",
+          "target_id": "fig8-lm1b-bin-11",
+          "printed_count": 0,
+          "verdict": "NOT_EXECUTABLE_INPUT"
+        }
+      ],
+      "verdict": "NOT_EXECUTABLE_INPUT",
+      "qualification": "No LM1B cluster archive is pinned; the released endpoint returned 404. Bars remain printed-only and no edge convention is inferred.",
+      "source_path": "paper/targets/figure-bars.csv"
+    }
+  ]
+}

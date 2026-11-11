@@ -1,0 +1,62 @@
+{
+  "stage": "Stage 2 finalization / run-004",
+  "created_at": "2026-11-10T09:31:53.273257+00:00",
+  "command": [
+    "python.exe",
+    "src/stage2_audit.py",
+    "--resume",
+    "--out-dir",
+    "results/stage2/run-002/audit"
+  ],
+  "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "duckdb": "2.0.0",
+  "pyarrow": "26.0.1",
+  "split_source": "1,024 original allenai/c4 train JSON shards streamed under Amendment A1 plus full validation Parquet",
+  "split_root_sha": "1588ec454efa1a09f29cd18ddd04fe05fc8653a2",
+  "split_sizes": {
+    "train": 364868892,
+    "validation": 364608
+  },
+  "inputs": [
+    {
+      "local_path": ".\\data\\raw\\c4\\en\\validation-00000.parquet",
+      "url": "https://huggingface.co/api/datasets/allenai/c4/parquet/en/validation/0.parquet",
+      "bytes": 311994499,
+      "expected_bytes": 311994499,
+      "sha256": "709bd820dacbaeb50025a0ebf5bfd311745b5a90cd6941887a01b1faf00ff285",
+      "expected_sha256": "709bd820dacbaeb50025a0ebf5bfd311745b5a90cd6941887a01b1faf00ff285",
+      "acquired_at": "2026-11-09T13:50:11.103454+00:00",
+      "rights": "C4 is ODC-BY; keep acquired source files local and publish aggregates only."
+    },
+    {
+      "local_path": ".\\data\\raw\\c4\\en\\validation-00001.parquet",
+      "url": "https://huggingface.co/api/datasets/allenai/c4/parquet/en/validation/1.parquet",
+      "bytes": 197281279,
+      "expected_bytes": 197281279,
+      "sha256": "6f276e569450e157cad26d67d7623f82f512b2a67d317188b7717b29c6da565f",
+      "expected_sha256": "6f276e569450e157cad26d67d7623f82f512b2a67d317188b7717b29c6da565f",
+      "acquired_at": "2026-11-09T13:50:20.432054+00:00",
+      "rights": "C4 is ODC-BY; keep acquired source files local and publish aggregates only."
+    }
+  ],
+  "acquisition_manifest": ".\\results\\stage2\\run-002\\split-acquisition-manifest.json",
+  "derived_public_db": {
+    "path": ".\\results\\stage2\\run-002\\work\\public.duckdb",
+    "bytes": 14786244608,
+    "sha256": "f0fc381d48dcb2f25f8f1121980b8f8f0bc030a86857f21e9e6cdb44a7751297"
+  },
+  "streamed_train_shards": 1024,
+  "streamed_train_bytes": 326778635540,
+  "code_sha256": {
+    "src/stage2_acquire.py": "8e82f2348279558d2e24938cd44cf7cf26a2f844b6b53b40cf4062fb1afa10be",
+    "src/stage2_audit.py": "d8259a43ff54267d31f11ed3918f565533059159daf083e4eb115f44bc2af815",
+    "src/stage2_compare.py": "3525791bbe3816202464a5643aa18c14655eb13a6e2d5eec51431717a5ef3528",
+    "src/stage2_finalize.py": "9ddcb3858ddf5991c68f5e1c749c5b96d9adbf1b461ef6ea0f5031fc03aeb6a2",
+    "src/verify_stage2.py": "64de4d8493878ad75ae6f1a6538c39846e34ca69386b7a3ae0d49265692747bf"
+  },
+  "acquisition_manifest_sha256": "ed8edd020923a1562c5771bb902d713f4422304ee983728b431a6b99eb1da806",
+  "train_source_metadata": ".\\results\\stage2\\run-002\\train-source-metadata.json",
+  "train_source_metadata_sha256": "f68302d67a7d89eecb29cd1953e9bcac1b3ded4419c843a855c41033486a3232",
+  "work_db": ".\\results\\stage2\\run-002\\audit\\work\\c4.duckdb"
+}

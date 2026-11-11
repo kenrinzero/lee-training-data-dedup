@@ -1,0 +1,4 @@
+{
+  "globs": ["**/*.md", "**/*.html"],
+  "enabled_rules": ["crossref-claims", "encoding-gates"]
+}

@@ -1,0 +1,798 @@
+{
+  "schema_version": 1,
+  "publication_date": "2026-11-11",
+  "accepted_stage7": "run-002",
+  "scientific_content_changed": false,
+  "files": [
+    {
+      "source": "AGENTS.md",
+      "exported": "AGENTS.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "CLAIM_INVENTORY.md",
+      "exported": "CLAIM_INVENTORY.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "PREREGISTRATION.md",
+      "exported": "PREREGISTRATION.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "README.md",
+      "exported": "README.md",
+      "transform": "regenerated publication README"
+    },
+    {
+      "source": "SCOPE.md",
+      "exported": "SCOPE.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "STEP0_DERIVATIONS.md",
+      "exported": "STEP0_DERIVATIONS.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "data/raw/MANIFEST.md",
+      "exported": "data/raw/MANIFEST.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "paper/PROVENANCE.md",
+      "exported": "paper/PROVENANCE.md",
+      "transform": "canonical ACL source link replaces excluded local PDF link"
+    },
+    {
+      "source": "paper/targets/README.md",
+      "exported": "paper/targets/README.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "paper/targets/figure-bars.csv",
+      "exported": "paper/targets/figure-bars.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "paper/targets/printed-targets.csv",
+      "exported": "paper/targets/printed-targets.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/FREEZE-v1.json",
+      "exported": "planning/FREEZE-v1.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/SEED-2026-09-30.md",
+      "exported": "planning/SEED-2026-09-30.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/claim-inventory-v1.md",
+      "exported": "planning/claim-inventory-v1.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/external-audit-2026-11-10.md",
+      "exported": "planning/external-audit-2026-11-10.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/external-audit-2026-11-11.md",
+      "exported": "planning/external-audit-2026-11-11.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/preregistration-v1.md",
+      "exported": "planning/preregistration-v1.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0-derivations-v1.md",
+      "exported": "planning/step0-derivations-v1.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/arithmetic.json",
+      "exported": "planning/step0/arithmetic.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/arithmetic.md",
+      "exported": "planning/step0/arithmetic.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/progress.md",
+      "exported": "planning/step0/progress.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/task-1-brief.md",
+      "exported": "planning/step0/task-1-brief.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/task-1-report.md",
+      "exported": "planning/step0/task-1-report.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/task-2-brief.md",
+      "exported": "planning/step0/task-2-brief.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/task-2-report.md",
+      "exported": "planning/step0/task-2-report.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/task-3-brief.md",
+      "exported": "planning/step0/task-3-brief.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "planning/step0/task-3-report.md",
+      "exported": "planning/step0/task-3-report.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/README.md",
+      "exported": "results/README.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/cluster-composition.csv",
+      "exported": "results/stage1/run-004/audit/cluster-composition.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/cluster-histogram.csv",
+      "exported": "results/stage1/run-004/audit/cluster-histogram.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/comparison-summary.json",
+      "exported": "results/stage1/run-004/audit/comparison-summary.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/convention-lock.json",
+      "exported": "results/stage1/run-004/audit/convention-lock.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/cross-split-public-keys.csv",
+      "exported": "results/stage1/run-004/audit/cross-split-public-keys.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/derived-duplication.csv",
+      "exported": "results/stage1/run-004/audit/derived-duplication.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/derived-removals.csv",
+      "exported": "results/stage1/run-004/audit/derived-removals.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/derived-summary.json",
+      "exported": "results/stage1/run-004/audit/derived-summary.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/duplicate-public-keys.csv",
+      "exported": "results/stage1/run-004/audit/duplicate-public-keys.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/duplicate-released-ids.csv",
+      "exported": "results/stage1/run-004/audit/duplicate-released-ids.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/edge-sizes.csv",
+      "exported": "results/stage1/run-004/audit/edge-sizes.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/figure-counts.csv",
+      "exported": "results/stage1/run-004/audit/figure-counts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/figure-verdicts.csv",
+      "exported": "results/stage1/run-004/audit/figure-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/input-manifest.json",
+      "exported": "results/stage1/run-004/audit/input-manifest.json",
+      "transform": "member-absolute paths relativized; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage1/run-004/audit/join-discrepancies.csv",
+      "exported": "results/stage1/run-004/audit/join-discrepancies.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/keep-discrepancies.csv",
+      "exported": "results/stage1/run-004/audit/keep-discrepancies.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/missing-public-keys.csv",
+      "exported": "results/stage1/run-004/audit/missing-public-keys.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/report.md",
+      "exported": "results/stage1/run-004/audit/report.md",
+      "transform": "member-absolute paths relativized"
+    },
+    {
+      "source": "results/stage1/run-004/audit/run-manifest.json",
+      "exported": "results/stage1/run-004/audit/run-manifest.json",
+      "transform": "sanitized outputs with recomputed receipts"
+    },
+    {
+      "source": "results/stage1/run-004/audit/table13-verdicts.csv",
+      "exported": "results/stage1/run-004/audit/table13-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/audit/table2-verdicts.csv",
+      "exported": "results/stage1/run-004/audit/table2-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage1/run-004/progress.md",
+      "exported": "results/stage1/run-004/progress.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-002/split-acquisition-manifest.json",
+      "exported": "results/stage2/run-002/split-acquisition-manifest.json",
+      "transform": "member-absolute paths relativized; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage2/run-002/train-source-metadata.json",
+      "exported": "results/stage2/run-002/train-source-metadata.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/cluster-facts.json",
+      "exported": "results/stage2/run-004/audit/cluster-facts.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/cluster-histogram.csv",
+      "exported": "results/stage2/run-004/audit/cluster-histogram.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/companion-verdicts.json",
+      "exported": "results/stage2/run-004/audit/companion-verdicts.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/comparison-summary.json",
+      "exported": "results/stage2/run-004/audit/comparison-summary.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/convention-application.json",
+      "exported": "results/stage2/run-004/audit/convention-application.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/cross-split-public-keys.csv",
+      "exported": "results/stage2/run-004/audit/cross-split-public-keys.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/custody-verification.json",
+      "exported": "results/stage2/run-004/audit/custody-verification.json",
+      "transform": "member-absolute paths relativized; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage2/run-004/audit/derived-duplication.csv",
+      "exported": "results/stage2/run-004/audit/derived-duplication.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/derived-removals.csv",
+      "exported": "results/stage2/run-004/audit/derived-removals.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/derived-summary.json",
+      "exported": "results/stage2/run-004/audit/derived-summary.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/duplicate-public-keys.csv",
+      "exported": "results/stage2/run-004/audit/duplicate-public-keys.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/duplicate-released-urls.csv",
+      "exported": "results/stage2/run-004/audit/duplicate-released-urls.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/figure-counts.csv",
+      "exported": "results/stage2/run-004/audit/figure-counts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/figure-verdicts.csv",
+      "exported": "results/stage2/run-004/audit/figure-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/full-input-manifest.json",
+      "exported": "results/stage2/run-004/audit/full-input-manifest.json",
+      "transform": "member-absolute paths relativized; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage2/run-004/audit/input-manifest.json",
+      "exported": "results/stage2/run-004/audit/input-manifest.json",
+      "transform": "member-absolute paths relativized; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage2/run-004/audit/keep-discrepancies.csv",
+      "exported": "results/stage2/run-004/audit/keep-discrepancies.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/missing-public-keys.csv",
+      "exported": "results/stage2/run-004/audit/missing-public-keys.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/random-split-ee.json",
+      "exported": "results/stage2/run-004/audit/random-split-ee.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/random-split-ratios.csv",
+      "exported": "results/stage2/run-004/audit/random-split-ratios.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/random-split-verdict.json",
+      "exported": "results/stage2/run-004/audit/random-split-verdict.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/release-identity.json",
+      "exported": "results/stage2/run-004/audit/release-identity.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/report.md",
+      "exported": "results/stage2/run-004/audit/report.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/run-manifest.json",
+      "exported": "results/stage2/run-004/audit/run-manifest.json",
+      "transform": "sanitized outputs with recomputed receipts"
+    },
+    {
+      "source": "results/stage2/run-004/audit/section5-verdicts.csv",
+      "exported": "results/stage2/run-004/audit/section5-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/table11-top20.csv",
+      "exported": "results/stage2/run-004/audit/table11-top20.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/table11-verdicts.csv",
+      "exported": "results/stage2/run-004/audit/table11-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/table13-verdicts.csv",
+      "exported": "results/stage2/run-004/audit/table13-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/table2-verdicts.csv",
+      "exported": "results/stage2/run-004/audit/table2-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/unmatched-released-keys.csv",
+      "exported": "results/stage2/run-004/audit/unmatched-released-keys.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/audit/url-divergences.csv",
+      "exported": "results/stage2/run-004/audit/url-divergences.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage2/run-004/progress.md",
+      "exported": "results/stage2/run-004/progress.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/acquisition-manifest.json",
+      "exported": "results/stage3/run-002/acquisition-manifest.json",
+      "transform": "member-absolute paths relativized; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage3/run-002/audit/cluster-histogram.csv",
+      "exported": "results/stage3/run-002/audit/cluster-histogram.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/companion-verdicts.json",
+      "exported": "results/stage3/run-002/audit/companion-verdicts.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/comparison-summary.json",
+      "exported": "results/stage3/run-002/audit/comparison-summary.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/convention-application.json",
+      "exported": "results/stage3/run-002/audit/convention-application.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/derived-summary.json",
+      "exported": "results/stage3/run-002/audit/derived-summary.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/duplicate-released-urls.csv",
+      "exported": "results/stage3/run-002/audit/duplicate-released-urls.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/edge-sizes.csv",
+      "exported": "results/stage3/run-002/audit/edge-sizes.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/figure-counts.csv",
+      "exported": "results/stage3/run-002/audit/figure-counts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/figure-verdicts.csv",
+      "exported": "results/stage3/run-002/audit/figure-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/input-manifest.json",
+      "exported": "results/stage3/run-002/audit/input-manifest.json",
+      "transform": "member-absolute paths relativized; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage3/run-002/audit/keep-discrepancies.csv",
+      "exported": "results/stage3/run-002/audit/keep-discrepancies.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/removal-ceiling.json",
+      "exported": "results/stage3/run-002/audit/removal-ceiling.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/report.md",
+      "exported": "results/stage3/run-002/audit/report.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/run-manifest.json",
+      "exported": "results/stage3/run-002/audit/run-manifest.json",
+      "transform": "sanitized outputs with recomputed receipts"
+    },
+    {
+      "source": "results/stage3/run-002/audit/table11-top20.csv",
+      "exported": "results/stage3/run-002/audit/table11-top20.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/table11-verdicts.csv",
+      "exported": "results/stage3/run-002/audit/table11-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/table13-verdicts.csv",
+      "exported": "results/stage3/run-002/audit/table13-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/table2-verdicts.csv",
+      "exported": "results/stage3/run-002/audit/table2-verdicts.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/audit/url-divergences.csv",
+      "exported": "results/stage3/run-002/audit/url-divergences.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage3/run-002/progress.md",
+      "exported": "results/stage3/run-002/progress.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/audit/fig1-c4.svg",
+      "exported": "results/stage7/run-001/audit/fig1-c4.svg",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/audit/fig8-lm1b.svg",
+      "exported": "results/stage7/run-001/audit/fig8-lm1b.svg",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/audit/fig8-realnews.svg",
+      "exported": "results/stage7/run-001/audit/fig8-realnews.svg",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/audit/fig8-wiki40b.svg",
+      "exported": "results/stage7/run-001/audit/fig8-wiki40b.svg",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/audit/figures.json",
+      "exported": "results/stage7/run-001/audit/figures.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/audit/index.html",
+      "exported": "results/stage7/run-001/audit/index.html",
+      "transform": "public package-boundary wording; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage7/run-001/audit/input-manifest.json",
+      "exported": "results/stage7/run-001/audit/input-manifest.json",
+      "transform": "source-free exclusions and refreshed accepted-source receipts"
+    },
+    {
+      "source": "results/stage7/run-001/audit/ledger.csv",
+      "exported": "results/stage7/run-001/audit/ledger.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/audit/ledger.json",
+      "exported": "results/stage7/run-001/audit/ledger.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/audit/report.md",
+      "exported": "results/stage7/run-001/audit/report.md",
+      "transform": "public package-boundary wording; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage7/run-001/audit/run-manifest.json",
+      "exported": "results/stage7/run-001/audit/run-manifest.json",
+      "transform": "sanitized outputs with recomputed code and output receipts"
+    },
+    {
+      "source": "results/stage7/run-001/cold-disk-verification.log",
+      "exported": "results/stage7/run-001/cold-disk-verification.log",
+      "transform": "UTF-8/LF normalized allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/progress.md",
+      "exported": "results/stage7/run-001/progress.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-001/second-reader-ruleset.json",
+      "exported": "results/stage7/run-001/second-reader-ruleset.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/fig1-c4.svg",
+      "exported": "results/stage7/run-002/audit/fig1-c4.svg",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/fig8-lm1b.svg",
+      "exported": "results/stage7/run-002/audit/fig8-lm1b.svg",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/fig8-realnews.svg",
+      "exported": "results/stage7/run-002/audit/fig8-realnews.svg",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/fig8-wiki40b.svg",
+      "exported": "results/stage7/run-002/audit/fig8-wiki40b.svg",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/figures.json",
+      "exported": "results/stage7/run-002/audit/figures.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/index.html",
+      "exported": "results/stage7/run-002/audit/index.html",
+      "transform": "public package-boundary wording; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage7/run-002/audit/input-manifest.json",
+      "exported": "results/stage7/run-002/audit/input-manifest.json",
+      "transform": "source-free exclusions and refreshed accepted-source receipts"
+    },
+    {
+      "source": "results/stage7/run-002/audit/ledger.csv",
+      "exported": "results/stage7/run-002/audit/ledger.csv",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/ledger.json",
+      "exported": "results/stage7/run-002/audit/ledger.json",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/report.md",
+      "exported": "results/stage7/run-002/audit/report.md",
+      "transform": "public package-boundary wording; dependent receipts refreshed"
+    },
+    {
+      "source": "results/stage7/run-002/audit/run-manifest.json",
+      "exported": "results/stage7/run-002/audit/run-manifest.json",
+      "transform": "sanitized outputs with recomputed code and output receipts"
+    },
+    {
+      "source": "results/stage7/run-002/progress.md",
+      "exported": "results/stage7/run-002/progress.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/README.md",
+      "exported": "src/README.md",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage1_audit.py",
+      "exported": "src/stage1_audit.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage1_compare.py",
+      "exported": "src/stage1_compare.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage1_report.py",
+      "exported": "src/stage1_report.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage2_acquire.py",
+      "exported": "src/stage2_acquire.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage2_audit.py",
+      "exported": "src/stage2_audit.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage2_compare.py",
+      "exported": "src/stage2_compare.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage2_finalize.py",
+      "exported": "src/stage2_finalize.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage2_identity.py",
+      "exported": "src/stage2_identity.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage2_report.py",
+      "exported": "src/stage2_report.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage3_audit.py",
+      "exported": "src/stage3_audit.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage3_compare.py",
+      "exported": "src/stage3_compare.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage3_report.py",
+      "exported": "src/stage3_report.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/stage7_build.py",
+      "exported": "src/stage7_build.py",
+      "transform": "source-free public verifier adaptation; actual successful hash count"
+    },
+    {
+      "source": "src/stage7_publication.py",
+      "exported": "src/stage7_publication.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/verify_stage1.py",
+      "exported": "src/verify_stage1.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/verify_stage1_report.py",
+      "exported": "src/verify_stage1_report.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/verify_stage2.py",
+      "exported": "src/verify_stage2.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/verify_stage2_report.py",
+      "exported": "src/verify_stage2_report.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/verify_stage3.py",
+      "exported": "src/verify_stage3.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/verify_stage3_report.py",
+      "exported": "src/verify_stage3_report.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "src/verify_stage7.py",
+      "exported": "src/verify_stage7.py",
+      "transform": "source-free public fixture adaptation"
+    },
+    {
+      "source": "src/verify_stage7_publication.py",
+      "exported": "src/verify_stage7_publication.py",
+      "transform": "byte-identical allowlisted copy"
+    },
+    {
+      "source": "results/stage7/run-002/audit/index.html",
+      "exported": "index.html",
+      "transform": "root reader; four-level relative links rewritten to repository root"
+    },
+    {
+      "source": "results/stage7/run-002/audit/report.md",
+      "exported": "REPORT.md",
+      "transform": "root report copy"
+    },
+    {
+      "source": "planning/external-audit-2026-11-11.md",
+      "exported": "AUDIT.md",
+      "transform": "corrected independent audit copy"
+    },
+    {
+      "source": "publication metadata",
+      "exported": "PACKAGE-MANIFEST.json and PACKAGE-PROVENANCE.json",
+      "transform": "dependent run receipts recomputed; deterministic package receipts"
+    }
+  ]
+}

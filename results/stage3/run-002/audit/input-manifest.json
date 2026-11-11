@@ -1,0 +1,50 @@
+{
+  "stage": "Stage 3 / run-002",
+  "created_at": "2026-11-10T20:48:21.862584+00:00",
+  "command": [
+    "python.exe",
+    "src/stage3_audit.py",
+    "--out-dir",
+    "results/stage3/run-002/audit"
+  ],
+  "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "duckdb": "2.0.0",
+  "pyarrow": "26.0.1",
+  "csv_parser": "Python csv.reader(strict=True), UTF-8, typed batches into DuckDB",
+  "archive": {
+    "member": "realnews.csv",
+    "decompressed_bytes": 3432651696,
+    "header": [
+      "id",
+      "keep",
+      "cluster"
+    ],
+    "physical_rows": 32797763
+  },
+  "inputs": [
+    {
+      "local_path": ".\\data\\raw\\clusters\\realnews.tar.gz",
+      "url": "https://storage.googleapis.com/gresearch/data_deduplication/realnews.tar.gz",
+      "bytes": 1428191066,
+      "expected_bytes": 1428191066,
+      "sha256": "27b14ae911e3bb2632f2a087e84f24c0f5163786d77ff92e1bbfa9d47473046c",
+      "expected_sha256": "27b14ae911e3bb2632f2a087e84f24c0f5163786d77ff92e1bbfa9d47473046c",
+      "acquired_at": "2026-11-10T19:47:32.330577+00:00",
+      "rights": "Cluster redistribution rights are unresolved; keep raw inputs local and publish aggregates only."
+    }
+  ],
+  "acquisition_manifest": ".\\results\\stage3\\run-002\\acquisition-manifest.json",
+  "acquisition_manifest_sha256": "a3ca8cbad5d62a2624b3864cc4143ec8572fd59dc72c1eca253ef0b99e2d6110",
+  "work_db": "work/realnews.duckdb",
+  "scratch_bytes": 3942658048,
+  "elapsed_seconds": 240.4213865999991,
+  "code_sha256": {
+    "src/stage1_audit.py": "8d49370a6aa213da76595b5671da458c6780fa466a8fefc89342505d963bdfae",
+    "src/stage3_audit.py": "a69e7406b07ec842813945aa16c23b6d5636d85c225f4d78d85c7be021fc2112",
+    "src/stage3_compare.py": "cfae44601773d3aa7bf32e0acf9b89d4f4902737e67c67f9f57c2145549e273a",
+    "src/stage3_report.py": "6e41b926c4dd9134d6812a0c46eb732142f36119d7d991cd5ab7a21b65b9ad50",
+    "src/verify_stage3.py": "58cfa16ad08ea31133c869a724666a842a7846becff811b067777c41a9b0c806",
+    "src/verify_stage3_report.py": "58b3fd998b46ee99c0fb95ddcfc46df8841fe85adf7164c613eb14b8245d4fd9"
+  }
+}

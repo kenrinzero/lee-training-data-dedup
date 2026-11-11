@@ -1,0 +1,339 @@
+{
+  "task": "Step 0 Task 2 — independent printed arithmetic",
+  "access_date": "2026-11-08",
+  "printed_oracle": {
+    "targets": "paper/targets/printed-targets.csv",
+    "figure_bars": "paper/targets/figure-bars.csv",
+    "target_rows": 193,
+    "figure_rows": 44
+  },
+  "public_split_inputs": {
+    "c4_train": {
+      "value": 364868892,
+      "unit": "examples",
+      "dataset": "legacy-datasets/c4",
+      "config": "en",
+      "split": "train",
+      "revision": "21e98d7063e4037e836a0299d7fbb7efd484e6c3",
+      "url": "https://huggingface.co/datasets/legacy-datasets/c4/raw/21e98d7063e4037e836a0299d7fbb7efd484e6c3/README.md",
+      "api_url": "https://huggingface.co/api/datasets/legacy-datasets/c4",
+      "accessed": "2026-11-08"
+    },
+    "c4_validation": {
+      "value": 364608,
+      "unit": "examples",
+      "dataset": "legacy-datasets/c4",
+      "config": "en",
+      "split": "validation",
+      "revision": "21e98d7063e4037e836a0299d7fbb7efd484e6c3",
+      "url": "https://huggingface.co/datasets/legacy-datasets/c4/raw/21e98d7063e4037e836a0299d7fbb7efd484e6c3/README.md",
+      "api_url": "https://huggingface.co/api/datasets/legacy-datasets/c4",
+      "accessed": "2026-11-08"
+    },
+    "lm1b_train": {
+      "value": 30301028,
+      "unit": "sentences",
+      "dataset": "billion-word-benchmark/lm1b",
+      "config": "plain_text",
+      "split": "train",
+      "revision": "35161838ea9e05371a25a8db037f94fcae4c2064",
+      "url": "https://huggingface.co/datasets/billion-word-benchmark/lm1b/raw/35161838ea9e05371a25a8db037f94fcae4c2064/README.md",
+      "api_url": "https://huggingface.co/api/datasets/billion-word-benchmark/lm1b",
+      "accessed": "2026-11-08"
+    },
+    "lm1b_evaluation": {
+      "value": 306688,
+      "unit": "sentences",
+      "dataset": "billion-word-benchmark/lm1b",
+      "config": "plain_text",
+      "split": "test",
+      "paper_mapping": "validation/evaluation terminology mapped to public held-out test split; no separate public validation split exists",
+      "revision": "35161838ea9e05371a25a8db037f94fcae4c2064",
+      "url": "https://huggingface.co/datasets/billion-word-benchmark/lm1b/raw/35161838ea9e05371a25a8db037f94fcae4c2064/README.md",
+      "loader_url": "https://huggingface.co/datasets/billion-word-benchmark/lm1b/raw/35161838ea9e05371a25a8db037f94fcae4c2064/lm1b.py",
+      "api_url": "https://huggingface.co/api/datasets/billion-word-benchmark/lm1b",
+      "accessed": "2026-11-08"
+    }
+  },
+  "rounding": {
+    "table13_examples": "Values printed to 0.01M use open nearest-rounding intervals; C4 removals (14380000,14400000), LM1B removals (420000,440000).",
+    "table2_c4_train_train": "3.04% is robustly allowed to lie in [3.035%,3.045%).",
+    "endpoint_sensitivity": "Closing the Table 13 endpoints does not change any verdict."
+  },
+  "derivations": [
+    {
+      "id": "c4_removal_ceiling",
+      "premises": [
+        {"name": "train_with_train_percent", "value": 3.04, "unit": "%", "printed_target_id": "table2-c4-train-train"},
+        {"name": "original_examples_million", "value": 364.87, "unit": "million examples", "printed_target_id": "table13-c4-examples-original"},
+        {"name": "neardup_examples_million", "value": 350.48, "unit": "million examples", "printed_target_id": "table13-c4-examples-neardup"},
+        {"name": "train_size", "value": 364868892, "unit": "examples", "public_input": "c4_train"},
+        {"name": "validation_size", "value": 364608, "unit": "examples", "public_input": "c4_validation"}
+      ],
+      "assumptions": [
+        "Table 2 and Table 13 describe the same NEARDUP population.",
+        "Keep-one removal prefers an evaluation copy where applicable.",
+        "Every removed train document has a duplicate in train or validation; documents without a train duplicate contribute at most one removal per validation document."
+      ],
+      "formulas": [
+        "D_tt = 0.0304 * 364868892 = 11092014.3168",
+        "U = D_tt + 364608 = 11456622.3168",
+        "U_rounded < 0.03045 * 364868892 + 364608 = 11474865.7614",
+        "R_table13 = (364.87 - 350.48) * 1000000 = 14390000",
+        "R_table13 in (14380000,14400000)",
+        "nominal_gap = 14390000 - 11456622.3168 = 2933377.6832",
+        "robust_gap = 14380000 - 11474865.7614 = 2905134.2386"
+      ],
+      "outputs": {
+        "train_with_train_expected_count": 11092014.3168,
+        "nominal_ceiling": 11456622.3168,
+        "rounding_aware_ceiling_strict_upper": 11474865.7614,
+        "table13_nominal_removals": 14390000,
+        "table13_rounding_interval": {"lower_exclusive": 14380000, "upper_exclusive": 14400000},
+        "nominal_shortfall": 2933377.6832,
+        "robust_minimum_shortfall": 2905134.2386
+      },
+      "verdict": "contradiction",
+      "interpretation": "Internal printed-arithmetic contradiction under the stated common-population and keep-one assumptions. A different release, split basis, flag convention, or table population could instead make this a release/convention mismatch; the arithmetic does not identify the faulty cell."
+    },
+    {
+      "id": "fig1_bounds",
+      "premises": [
+        {
+          "name": "figure_bars",
+          "figure": "Figure 1",
+          "bin_labels": ["1", "2", "3", "4", "5", "[6, 10)", "[11, 20)", "[21, 50)", "[51, 500)", "[501, 5000)", "[5001, ∞)"],
+          "counts": [348320475, 1861744, 292575, 109853, 54984, 85567, 42723, 28446, 23094, 2782, 280],
+          "unit": "groups"
+        },
+        {"name": "train_size", "value": 364868892, "unit": "examples", "public_input": "c4_train"},
+        {"name": "validation_size", "value": 364608, "unit": "examples", "public_input": "c4_validation"},
+        {"name": "table13_removal_rounding_interval", "lower_exclusive": 14380000, "upper_exclusive": 14400000, "unit": "examples"}
+      ],
+      "assumptions": [
+        "For total-based bounds and shares, Figure 1 covers the pinned public C4 train plus validation population.",
+        "One document is retained per multi-document cluster.",
+        "Exact sizes 10, 20, 50, 500, and 5000 are omitted by the printed half-open bin labels."
+      ],
+      "formulas": [
+        "l = [1,2,3,4,5,6,11,21,51,501,5001]",
+        "C_all = sum(b) = 350822523",
+        "C_multi = sum(b[1:]) = 2502048",
+        "D_singleton = b[0] = 348320475",
+        "D_multi_lower = sum(l[i]*b[i] for i in 1..10) = 10868122",
+        "D_all_lower = 348320475 + 10868122 = 359188597",
+        "N = 364868892 + 364608 = 365233500",
+        "unaccounted = 365233500 - 359188597 = 6044903",
+        "D_multi_upper = 365233500 - 348320475 = 16913025",
+        "R_whole_lower = D_multi_lower - C_multi = 8366074 (whole-population keep-one count, not a train-removal bound)",
+        "R_train_lower = R_whole_lower - 364608 = 8001466 (conservative validation-adjusted train-removal floor)",
+        "R_train_upper = N - D_singleton - C_multi = 14410977",
+        "multi_document_share_lower_percent = 100*10868122/365233500 = 2.975664061483955...",
+        "R_train_lower_train_percent = 100*8001466/364868892 = 2.192970180642311...",
+        "R_train_upper_train_percent = 100*14410977/364868892 = 3.949631584377437...",
+        "R_train_upper_total_percent = 100*14410977/365233500 = 3.945688716944092..."
+      ],
+      "outputs": {
+        "plotted_clusters": 350822523,
+        "plotted_multi_document_clusters": 2502048,
+        "singleton_documents": 348320475,
+        "exact_size_2_to_5_documents": 5315545,
+        "ranged_bins_lower_edge_documents": 5552577,
+        "multi_cluster_documents_lower": 10868122,
+        "multi_cluster_documents_upper_under_full_population": 16913025,
+        "plotted_lower_edge_documents": 359188597,
+        "unaccounted_documents": 6044903,
+        "lower_bin_edge_document_share_percent": 2.975664061483955,
+        "whole_population_keep_one_lower": 8366074,
+        "train_removal_lower": 8001466,
+        "train_removal_lower_train_percent": 2.192970180642311,
+        "train_removal_upper": 14410977,
+        "train_removal_upper_train_percent": 3.949631584377437,
+        "train_removal_upper_total_percent": 3.945688716944092,
+        "exact_multi_document_count": null,
+        "exact_removal_count": null
+      },
+      "verdict": "consistent",
+      "interpretation": "Table 13's (14.38M,14.40M) removal interval lies within Figure 1's corrected conditional train-removal interval [8.001466M,14.410977M]. The 8,366,074 value is only a whole-population keep-one lower count; subtracting all 364,608 validation examples gives the conservative train floor. Exact shares and removals remain indeterminate because of omitted edges and within-bin sizes."
+    },
+    {
+      "id": "random_split_identities",
+      "premises": [
+        {"name": "cluster_size_histogram", "symbol": "n_s", "observed_from_print": false},
+        {"name": "population_and_evaluation_sizes", "symbols": ["N", "V", "T=N-V"], "observed_from_print": "public split sizes only"},
+        {"name": "c4_validation_with_validation_percent", "value": 1.59, "unit": "%", "printed_target_id": "table2-c4-valid-valid"}
+      ],
+      "assumptions": [
+        "Documents are randomly assigned to evaluation, either independently with probability q or by an exactly sized uniform finite-population split.",
+        "Duplication with evaluation excludes the target document itself."
+      ],
+      "formulas": [
+        "iid: P_ET(s) = 1 - q^(s-1)",
+        "iid: P_EE(s) = 1 - (1-q)^(s-1)",
+        "iid: P_TT(s) = 1 - q^(s-1)",
+        "finite: P_ET(s) = 1 - C(V-1,s-1)/C(N-1,s-1) = 1 - (V-1)_(s-1)/(N-1)_(s-1)",
+        "finite: P_EE(s) = 1 - C(T,s-1)/C(N-1,s-1) = 1 - (T)_(s-1)/(N-1)_(s-1)",
+        "finite: P_TT(s) = 1 - C(V,s-1)/C(N-1,s-1)",
+        "E[P_ET] = (1/N) * sum_s s*n_s * [1-C(V-1,s-1)/C(N-1,s-1)]",
+        "E[P_EE] = (1/N) * sum_s s*n_s * [1-C(T,s-1)/C(N-1,s-1)]",
+        "A = sum_(s>=2) s*n_s/N",
+        "iid: A - E[P_ET] = sum_(s>=2) (s*n_s/N)*q^(s-1)"
+      ],
+      "outputs": {
+        "all_document_share_approximation_condition": "E[P_ET] approximates A only when all-evaluation multi-document clusters have negligible probability; equality requires every materially weighted multi-document cluster to retain a train member.",
+        "exact_validation_validation_requirements": ["complete n_s histogram or equivalent factorial moments", "N", "V"],
+        "c4_numeric_expectation": null,
+        "reason": "Printed bins omit exact edge sizes and all within-bin sizes; aggregate multi-document and cluster totals are insufficient. No unobserved distribution was substituted."
+      },
+      "verdict": "indeterminate",
+      "interpretation": "The identities are exact, but C4 Table 2's 1.59% validation-with-validation cell cannot be numerically reconstructed from the printed aggregates."
+    },
+    {
+      "id": "lm1b_printed_only_floor",
+      "premises": [
+        {
+          "name": "figure_bars",
+          "figure": "Figure 8(a)",
+          "bin_labels": ["1", "2", "3", "4", "5", "[6, 10)", "[11, 20)", "[21, 50)", "[51, 500)", "[501, 5000)", "[5001, ∞)"],
+          "counts": [29096827, 595632, 68775, 15825, 4432, 2762, 340, 66, 13, 0, 0],
+          "unit": "groups",
+          "checked_against": ["figure-bars.csv", "fig8-lm1b-bin-01 through fig8-lm1b-bin-11 in printed-targets.csv"]
+        },
+        {"name": "original_examples_million", "value": 30.30, "unit": "million examples", "printed_target_id": "table13-lm1b-examples-original"},
+        {"name": "neardup_examples_million", "value": 29.87, "unit": "million examples", "printed_target_id": "table13-lm1b-examples-neardup"},
+        {"name": "train_size", "value": 30301028, "unit": "sentences", "public_input": "lm1b_train"},
+        {"name": "heldout_test_size", "value": 306688, "unit": "sentences", "public_input": "lm1b_evaluation"}
+      ],
+      "assumptions": [
+        "Figure 8(a) covers the pinned public LM1B train plus held-out population.",
+        "The paper's validation/evaluation terminology maps to public LM1B test; without this convention the validation-adjusted numerical verdict is indeterminate.",
+        "Keep-one removal prefers a held-out copy where applicable.",
+        "Exact sizes 10, 20, 50, 500, and 5000 are omitted by the printed half-open labels."
+      ],
+      "formulas": [
+        "N = 30301028 + 306688 = 30607716",
+        "C_all = 29784672",
+        "C_multi = 687845",
+        "D_exact_size_2_to_5 = 1483049",
+        "D_ranged_lower = 22361",
+        "D_multi_lower = 1483049 + 22361 = 1505410",
+        "D_all_lower = 29096827 + 1505410 = 30602237",
+        "unaccounted = 30607716 - 30602237 = 5479",
+        "maximum_omitted_edge_clusters = floor(5479/10) = 547",
+        "R_plotted_lower = 1505410 - 687845 = 817565",
+        "R_train_lower = 817565 - 306688 = 510877",
+        "R_table13 = (30.30 - 29.87)*1000000 = 430000",
+        "R_table13 in (420000,440000)",
+        "nominal_gap = 510877 - 430000 = 80877",
+        "robust_gap = 510877 - 440000 = 70877"
+      ],
+      "outputs": {
+        "plotted_clusters": 29784672,
+        "plotted_multi_document_clusters": 687845,
+        "exact_size_2_to_5_documents": 1483049,
+        "ranged_bins_lower_edge_documents": 22361,
+        "multi_cluster_documents_lower": 1505410,
+        "plotted_lower_edge_documents": 30602237,
+        "unaccounted_documents": 5479,
+        "maximum_omitted_edge_size_clusters": 547,
+        "maximum_omitted_cluster_remainder_documents": 9,
+        "plotted_keep_one_removal_lower": 817565,
+        "heldout_adjusted_train_removal_floor": 510877,
+        "table13_nominal_removals": 430000,
+        "table13_rounding_interval": {"lower_exclusive": 420000, "upper_exclusive": 440000},
+        "nominal_excess": 80877,
+        "robust_minimum_excess": 70877
+      },
+      "verdict": "contradiction",
+      "interpretation": "The printed-only floor exceeds Table 13 even after all rounding and held-out allowances. Omitted edge clusters only increase the floor. The verdict is conditional on the explicit LM1B test/evaluation mapping."
+    },
+    {
+      "id": "c4_repeated_sentence_percentages",
+      "premises": [
+        {"name": "repeat_train", "value": 61036, "unit": "occurrences", "printed_target_id": "intro-c4-repeat-train"},
+        {"name": "repeat_validation", "value": 61, "unit": "occurrences", "printed_target_id": "intro-c4-repeat-validation"},
+        {"name": "printed_share", "value": 0.02, "unit": "%", "printed_target_id": "intro-c4-repeat-share"},
+        {"name": "train_size", "value": 364868892, "unit": "examples", "public_input": "c4_train"},
+        {"name": "validation_size", "value": 364608, "unit": "examples", "public_input": "c4_validation"}
+      ],
+      "assumptions": ["The printed 0.02% is rounded to two decimal places."],
+      "formulas": [
+        "100*61036/364868892 = 0.016728200550459642...%",
+        "100*61/364608 = 0.016730296647358260...%"
+      ],
+      "outputs": {
+        "train_percent": 0.016728200550459642,
+        "validation_percent": 0.01673029664735826,
+        "both_round_to_printed_percent": 0.02,
+        "exact_reverse_implied_train_count": 72973.7784,
+        "exact_reverse_implied_validation_count": 72.9216
+      },
+      "verdict": "consistent",
+      "interpretation": "Both independently computed percentages round to 0.02%; the non-integer reverse implications are not evidence against rounded wording."
+    },
+    {
+      "id": "c4_neardup_supporting_anchors",
+      "premises": [
+        {"name": "original_examples_million", "value": 364.87, "unit": "million examples", "printed_target_id": "table13-c4-examples-original"},
+        {"name": "neardup_examples_million", "value": 350.48, "unit": "million examples", "printed_target_id": "table13-c4-examples-neardup"},
+        {"name": "appendix_original_examples_million_approx", "value": 365, "unit": "million examples", "printed_target_id": "appendix-c-c4-original-examples"},
+        {"name": "appendix_neardup_examples_million_approx", "value": 350, "unit": "million examples", "printed_target_id": "appendix-c-c4-neardup-examples"},
+        {"name": "original_steps_thousand", "value": 152, "unit": "thousand steps", "printed_target_id": "appendix-c-c4-original-steps"},
+        {"name": "neardup_steps_thousand", "value": 146, "unit": "thousand steps", "printed_target_id": "appendix-c-c4-neardup-steps"},
+        {"name": "batch_size", "value": 4800, "unit": "examples per batch", "printed_target_id": "appendix-c-c4-batch-size"},
+        {"name": "epochs", "value": 2, "unit": "epochs", "printed_target_id": "appendix-c-c4-epochs"},
+        {"name": "appendix_size_reduction_percent", "value": 3.9, "unit": "%", "printed_target_id": "appendix-d-c4-size-reduction"},
+        {"name": "train_with_train_percent", "value": 3.04, "unit": "%", "printed_target_id": "table2-c4-train-train"}
+      ],
+      "assumptions": ["Appendix values are approximate and Table 13 values are rounded."],
+      "formulas": [
+        "100*(364.87-350.48)/364.87 = 3.9438704196015019...%",
+        "152000*4800/2 = 364800000",
+        "146000*4800/2 = 350400000"
+      ],
+      "outputs": {
+        "table13_reduction_percent": 3.943870419601502,
+        "rounds_to_appendix_percent": 3.9,
+        "original_step_implied_examples": 364800000,
+        "neardup_step_implied_examples": 350400000,
+        "section5_train_with_train_is_removal_percentage": false
+      },
+      "verdict": "consistent",
+      "interpretation": "NEARDUP Table 13, Appendix C/D size and step anchors agree at printed precision. Section 5.1's 3.04% has a different numerator and denominator basis; the separate ceiling contradiction remains."
+    },
+    {
+      "id": "c4_exactsubstr_size_consistency",
+      "premises": [
+        {"name": "original_examples_million", "value": 364.87, "unit": "million examples", "printed_target_id": "table13-c4-examples-original"},
+        {"name": "neardup_examples_million", "value": 350.48, "unit": "million examples", "printed_target_id": "table13-c4-examples-neardup"},
+        {"name": "exactsubstr_examples_million", "value": 350.48, "unit": "million examples", "printed_target_id": "table13-c4-examples-exactsubstr"},
+        {"name": "appendix_original_and_exactsubstr_examples_million_approx", "value": 365, "unit": "million examples", "printed_target_id": "appendix-c-c4-original-examples"},
+        {"name": "appendix_original_and_exactsubstr_steps_thousand", "value": 152, "unit": "thousand steps", "printed_target_id": "appendix-c-c4-original-steps"},
+        {"name": "section5_exactsubstr_overlap_percent", "value": 77, "unit": "%", "printed_target_id": "section5-c4-exact-overlap"}
+      ],
+      "assumptions": ["Appendix C's shared ORIGINAL/EXACTSUBSTR description and Appendix E's no-outright-example-removal statement apply to C4 as presented in the oracle."],
+      "formulas": [
+        "table13_exactsubstr_implied_example_reduction = (364.87-350.48)*1000000 = 14390000",
+        "appendix_step_implied_examples = 152000*4800/2 = 364800000",
+        "table13_exactsubstr_implied_steps_for_two_epochs = 350480000*2/4800 = 146033.3333333333..."
+      ],
+      "outputs": {
+        "table13_exactsubstr_equals_neardup": true,
+        "table13_implied_examples_removed": 14390000,
+        "appendix_approx_examples": 365000000,
+        "appendix_step_implied_examples": 364800000,
+        "table13_exactsubstr_implied_steps": 146033.33333333333,
+        "copy_error_established": false
+      },
+      "verdict": "contradiction",
+      "interpretation": "Table 13 conflicts with Appendix C's shared approximately 365M/152K ORIGINAL and EXACTSUBSTR description and §5.1/Appendix E's no-outright-example-removal method context. A copy/transcription explanation is a hypothesis, not an established fact."
+    }
+  ],
+  "constraints": {
+    "historical_seed_read": false,
+    "cluster_archive_downloaded_or_opened": false,
+    "full_dataset_downloaded": false,
+    "cluster_derived_estimates_computed": false,
+    "metadata_access_only": true
+  }
+}

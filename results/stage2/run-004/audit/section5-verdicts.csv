@@ -1,0 +1,5 @@
+claim,printed_value,derived_value,rounded_derived,verdict
+approximately 1.8M pair clusters,1.8,1861744,1.9,MISMATCH
+majority are pair clusters,majority,True,True,MATCH
+clusters over 5000,280,280,280,MATCH
+largest cluster size,250933,250933,250933,MATCH

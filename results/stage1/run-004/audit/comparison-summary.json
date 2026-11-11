@@ -1,0 +1,27 @@
+{
+  "table2_matches": 3,
+  "table2_mismatches": 3,
+  "table2_indeterminate": 0,
+  "table13_matches": 9,
+  "figure_match_counts": {
+    "dropped": 11,
+    "low": 9,
+    "high": 9
+  },
+  "convention_lock": {
+    "matching_conventions": [
+      "dropped"
+    ],
+    "locked_candidate_set": [
+      "dropped"
+    ],
+    "primary": "dropped",
+    "status": "PRIMARY_LOCKED",
+    "match_counts": {
+      "dropped": 11,
+      "low": 9,
+      "high": 9
+    },
+    "basis": "Wiki-40B Figure 8 bottom-panel printed fidelity only; C4 content was not opened"
+  }
+}

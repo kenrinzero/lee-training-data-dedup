@@ -1,0 +1,27 @@
+{
+  "status": "IDENTITY_HOLD",
+  "physical_rows": 365233500,
+  "expected_rows": 365233500,
+  "row_count_matches": true,
+  "figure_match_counts": {
+    "dropped": 11,
+    "low": 7,
+    "high": 7
+  },
+  "matching_conventions": [
+    "dropped"
+  ],
+  "unique_clusters": 350835689,
+  "largest_cluster_size": 250933,
+  "stage1_primary": "dropped",
+  "population": "released archive, all splits",
+  "decompressed_bytes": 30219354495,
+  "header": [
+    "id",
+    "keep",
+    "cluster"
+  ],
+  "row_order": "physical released CSV order; one-based data row numbers",
+  "malformed_rows": 0,
+  "empty_field_rows": 0
+}

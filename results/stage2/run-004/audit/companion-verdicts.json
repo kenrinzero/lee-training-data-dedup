@@ -1,0 +1,35 @@
+{
+  "section5_rounding": {
+    "printed_table2": "4.60%",
+    "printed_section5_3": "4.6%",
+    "verdict": "MATCH",
+    "basis": "printed ROUND_HALF_UP consistency, not a separate split result"
+  },
+  "printed_difference_interval": {
+    "A": "CONSISTENT_INTERVAL",
+    "B": "CONSISTENT_INTERVAL",
+    "S": "CONTRADICTION"
+  },
+  "printed_difference_interval_bounds": {
+    "lower_exclusive": 14380000,
+    "upper_exclusive": 14400000
+  },
+  "tokens": {
+    "original": "NOT_EXECUTABLE_INPUT",
+    "neardup": "NOT_EXECUTABLE_INPUT"
+  },
+  "token_reason": "cluster IDs and assignments cannot reproduce the paper's 50k BPE token counts",
+  "step0_companions": {
+    "c4_removal_ceiling": {
+      "source": "planning/step0/arithmetic.json derivations.c4_removal_ceiling",
+      "verdict": "CONTRADICTION",
+      "robust_minimum_shortfall": 2905134.2386
+    },
+    "fig1_bounds": {
+      "source": "planning/step0/arithmetic.json derivations.fig1_bounds",
+      "verdict": "CONSISTENT_INTERVAL",
+      "train_removal_lower": 8001466,
+      "train_removal_upper": 14410977
+    }
+  }
+}

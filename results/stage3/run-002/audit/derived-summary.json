@@ -1,0 +1,25 @@
+{
+  "physical_rows": 32797763,
+  "unique_ids": 32797763,
+  "unique_clusters": 30014995,
+  "duplicate_released_ids": 0,
+  "duplicate_released_rows": 0,
+  "singleton_documents": 27917044,
+  "multi_documents": 4880719,
+  "multi_clusters": 2097951,
+  "removals": 2782768,
+  "malformed_rows": 0,
+  "empty_field_rows": 0,
+  "row_order": "physical released CSV order; one-based data row numbers in diagnostics",
+  "population": "released archive, all splits",
+  "keep_agreement": {
+    "keep0_multi": 4880719,
+    "keep0_singleton": 0,
+    "keep1_multi": 0,
+    "keep1_singleton": 27917044
+  },
+  "keep_discrepancy_rows": 0,
+  "url_divergence_count": 0,
+  "divergence_status": "KEEP_MEMBERSHIP_AGREE",
+  "table11_eligible_ids": 0
+}

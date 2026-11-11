@@ -1,0 +1,11 @@
+{
+  "primary": "dropped",
+  "faithful_figure_output": "figure-counts.csv convention=dropped",
+  "alternatives": "low/high retained as sensitivities; no convention is selected from RealNews agreement",
+  "stage1_lock": "singleton dropped",
+  "realnews_figure_match_counts": {
+    "dropped": 11,
+    "low": 8,
+    "high": 8
+  }
+}

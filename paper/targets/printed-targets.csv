@@ -1,0 +1,194 @@
+target_id,claim_id,page,locator,corpus,quantity,split_or_arm,printed_value,unit,notes
+intro-c4-sequence-length,C6,1,§1 repeated-sequence example,C4,repeated sequence length,train and validation,61,words,Printed consistency input only; no substring recount target
+intro-c4-repeat-train,C6,1,§1 repeated-sequence example,C4,verbatim occurrences,train,61036,occurrences,Printed consistency input only; no substring recount target
+intro-c4-repeat-validation,C6,1,§1 repeated-sequence example,C4,verbatim occurrences,validation,61,occurrences,Printed consistency input only; no substring recount target
+intro-c4-repeat-share,C6,1,§1 repeated-sequence example,C4,share of samples represented by the repeated counts,train and validation,0.02,%,Printed as 0.02% of the samples in each dataset
+section3-wiki40b-size,C4,3,§3 Wikipedia (Wiki-40B),Wiki-40B,English Wikipedia pages,full English portion,2.9,million pages,Printed as 2.9M; prose approximation distinct from Table 13 train size
+section3-lm1b-size,C6,3,§3 One-Billion Word benchmark (LM1B),LM1B,news commentary sentences,full dataset,30,million sentences,Printed as 30M; prose approximation distinct from Table 13 train size
+section3-c4-size,C6,3,§3 Colossal Cleaned Common Crawl (C4),C4,web documents,full dataset,360,million documents,Printed as 360M; prose approximation distinct from Table 13 train size
+section3-realnews-size,C5,3,§3 RealNews,RealNews,news documents,full dataset,31,million documents,Printed as 31M; prose approximation distinct from Table 13 train size
+table2-c4-train-train,C1,5,Table 2 row C4,C4,train examples with duplicate in train,train,3.04,%,NEARDUP fraction of examples
+table2-c4-valid-valid,C1,5,Table 2 row C4,C4,validation examples with duplicate in validation,validation,1.59,%,NEARDUP fraction of examples
+table2-c4-valid-train,C1,5,Table 2 row C4,C4,validation examples with duplicate in train,validation,4.60,%,NEARDUP fraction of examples
+table2-realnews-train-train,C5,5,Table 2 row RealNews,RealNews,train examples with duplicate in train,train,13.63,%,NEARDUP fraction of examples
+table2-realnews-valid-valid,C5,5,Table 2 row RealNews,RealNews,validation examples with duplicate in validation,validation,1.25,%,NEARDUP fraction of examples
+table2-realnews-valid-train,C5,5,Table 2 row RealNews,RealNews,validation examples with duplicate in train,validation,14.35,%,NEARDUP fraction of examples
+table2-lm1b-train-train,C6,5,Table 2 row LM1B,LM1B,train examples with duplicate in train,train,4.86,%,NEARDUP fraction of examples
+table2-lm1b-valid-valid,C6,5,Table 2 row LM1B,LM1B,validation examples with duplicate in validation,validation,0.07,%,NEARDUP fraction of examples
+table2-lm1b-valid-train,C6,5,Table 2 row LM1B,LM1B,validation examples with duplicate in train,validation,4.92,%,NEARDUP fraction of examples
+table2-wiki40b-train-train,C4,5,Table 2 row Wiki40B,Wiki-40B,train examples with duplicate in train,train,0.39,%,NEARDUP fraction of examples
+table2-wiki40b-valid-valid,C4,5,Table 2 row Wiki40B,Wiki-40B,validation examples with duplicate in validation,validation,0.26,%,NEARDUP fraction of examples
+table2-wiki40b-valid-train,C4,5,Table 2 row Wiki40B,Wiki-40B,validation examples with duplicate in train,validation,0.72,%,NEARDUP fraction of examples; PDF does not identify this as test
+section5-c4-pair-clusters,C3,5,§5.1 Amount of Text Removed,C4,near-duplicate clusters consisting of one matching pair,NEARDUP,1.8,million clusters,Printed as majority (1.8M); approximate
+section5-c4-large-clusters,C3,5,§5.1 Amount of Text Removed,C4,clusters with over 5000 examples,NEARDUP,280,clusters,Exact printed count; agrees with Figure 1 top bar
+section5-c4-large-cluster-threshold,C3,5,§5.1 Amount of Text Removed,C4,large-cluster size threshold,NEARDUP,5000,examples per cluster,Prose says over 5000; Figure 1 top label begins at 5001
+section5-c4-largest-cluster,C3,5,§5.1 Amount of Text Removed,C4,largest near-duplicate cluster size,NEARDUP,250933,examples,One cluster
+section5-c4-exact-overlap,C6,5,§5.1 Amount of Text Removed,C4,NEARDUP-removed train examples with a verbatim length-50 EXACTSUBSTR match,NEARDUP-removed train examples,77,%,Printed context only; no EXACTSUBSTR reproduction target
+table13-c4-tokens-original,C2,21,Table 13 row C4 final train set size in tokens,C4,train tokens,ORIGINAL,177.3,billion BPE tokens,Printed as 177.3B using the paper's 50k BPE vocabulary
+table13-c4-tokens-neardup,C2,21,Table 13 row C4 final train set size in tokens,C4,train tokens,NEARDUP,173.7,billion BPE tokens,Printed as 173.7B using the paper's 50k BPE vocabulary
+table13-c4-tokens-exactsubstr,C2,21,Table 13 row C4 final train set size in tokens,C4,train tokens,EXACTSUBSTR,165.4,billion BPE tokens,Printed context only; no EXACTSUBSTR reproduction target
+table13-c4-examples-original,C2,21,Table 13 row C4 final train set size in examples,C4,train examples,ORIGINAL,364.87,million examples,Printed as 364.87M; rounded
+table13-c4-examples-neardup,C2,21,Table 13 row C4 final train set size in examples,C4,train examples,NEARDUP,350.48,million examples,Printed as 350.48M; rounded
+table13-c4-examples-exactsubstr,C6,21,Table 13 row C4 final train set size in examples,C4,train examples,EXACTSUBSTR,350.48,million examples,Same printed value as NEARDUP; compare Appendix C approximately 365M; no EXACTSUBSTR reproduction target
+table13-realnews-tokens-original,C5,21,Table 13 row Real News final train set size in tokens,RealNews,train tokens,ORIGINAL,24.7,billion BPE tokens,Printed as 24.7B using the paper's 50k BPE vocabulary; row label is Real News
+table13-realnews-tokens-neardup,C5,21,Table 13 row Real News final train set size in tokens,RealNews,train tokens,NEARDUP,22.4,billion BPE tokens,Printed as 22.4B using the paper's 50k BPE vocabulary; row label is Real News
+table13-realnews-tokens-exactsubstr,C5,21,Table 13 row Real News final train set size in tokens,RealNews,train tokens,EXACTSUBSTR,20.1,billion BPE tokens,Printed context only; no EXACTSUBSTR reproduction target
+table13-realnews-examples-original,C5,21,Table 13 row Real News final train set size in examples,RealNews,train examples,ORIGINAL,31.16,million examples,Printed as 31.16M; row label is Real News
+table13-realnews-examples-neardup,C5,21,Table 13 row Real News final train set size in examples,RealNews,train examples,NEARDUP,28.39,million examples,Printed as 28.39M; row label is Real News
+table13-realnews-examples-exactsubstr,C5,21,Table 13 row Real News final train set size in examples,RealNews,train examples,EXACTSUBSTR,28.39,million examples,Same printed value as NEARDUP; no EXACTSUBSTR reproduction target
+table13-lm1b-tokens-original,C6,21,Table 13 row LM1B final train set size in tokens,LM1B,train tokens,ORIGINAL,1.0,billion BPE tokens,Printed as 1.0B using the paper's 50k BPE vocabulary
+table13-lm1b-tokens-neardup,C6,21,Table 13 row LM1B final train set size in tokens,LM1B,train tokens,NEARDUP,0.94,billion BPE tokens,Printed as 0.94B using the paper's 50k BPE vocabulary
+table13-lm1b-tokens-exactsubstr,C6,21,Table 13 row LM1B final train set size in tokens,LM1B,train tokens,EXACTSUBSTR,0.90,billion BPE tokens,Printed context only; no EXACTSUBSTR reproduction target
+table13-lm1b-examples-original,C6,21,Table 13 row LM1B final train set size in examples,LM1B,train examples,ORIGINAL,30.30,million examples,Printed as 30.30M
+table13-lm1b-examples-neardup,C6,21,Table 13 row LM1B final train set size in examples,LM1B,train examples,NEARDUP,29.87,million examples,Printed as 29.87M
+table13-lm1b-examples-exactsubstr,C6,21,Table 13 row LM1B final train set size in examples,LM1B,train examples,EXACTSUBSTR,30.16,million examples,Printed as 30.16M; differs from NEARDUP; no EXACTSUBSTR reproduction target
+table13-wiki40b-tokens-original,C4,21,Table 13 row Wiki40B final train set size in tokens,Wiki-40B,train tokens,ORIGINAL,2.25,billion BPE tokens,Printed as 2.25B using the paper's 50k BPE vocabulary
+table13-wiki40b-tokens-neardup,C4,21,Table 13 row Wiki40B final train set size in tokens,Wiki-40B,train tokens,NEARDUP,2.24,billion BPE tokens,Printed as 2.24B using the paper's 50k BPE vocabulary
+table13-wiki40b-tokens-exactsubstr,C4,21,Table 13 row Wiki40B final train set size in tokens,Wiki-40B,train tokens,EXACTSUBSTR,2.19,billion BPE tokens,Printed context only; no EXACTSUBSTR reproduction target
+table13-wiki40b-examples-original,C4,21,Table 13 row Wiki40B final train set size in examples,Wiki-40B,train examples,ORIGINAL,2.93,million examples,Printed as 2.93M
+table13-wiki40b-examples-neardup,C4,21,Table 13 row Wiki40B final train set size in examples,Wiki-40B,train examples,NEARDUP,2.91,million examples,Printed as 2.91M
+table13-wiki40b-examples-exactsubstr,C4,21,Table 13 row Wiki40B final train set size in examples,Wiki-40B,train examples,EXACTSUBSTR,2.93,million examples,Printed as 2.93M; no EXACTSUBSTR reproduction target
+c4-exact-train-size,C6,NA,Not printed in the 22-page PDF,C4,exact public train split size,train,UNRESOLVED,examples,Only 360M in §3 and 364.87M in Table 13 are printed; do not import the seed's exact count into this printed oracle
+c4-exact-validation-size,C6,NA,Not printed in the 22-page PDF,C4,exact public validation split size,validation,UNRESOLVED,examples,No exact validation count is printed; a separately pinned public split source is required for arithmetic
+lm1b-exact-train-size,C6,NA,Not printed in the 22-page PDF,LM1B,exact public train split size,train,UNRESOLVED,examples,Only coarse 30M in §3 and rounded 30.30M in Table 13 are printed; neither is the exact public train split count needed for LM1B arithmetic
+lm1b-exact-validation-size,C6,NA,Not printed in the 22-page PDF,LM1B,exact public validation split size,validation,UNRESOLVED,examples,No exact validation count is printed; a separately pinned public split source is required for arithmetic
+appendix-c-c4-original-examples,C2,15,Appendix C Further Details on Model Training,C4,approximate train examples,C4-ORIGINAL and C4-EXACTSUBSTR,365,million examples,Printed as approximately 365M examples for each arm
+appendix-c-c4-neardup-examples,C2,15,Appendix C Further Details on Model Training,C4,approximate train examples,C4-NEARDUP,350,million examples,Printed as approximately 350M examples
+appendix-c-c4-original-steps,C2,15,Appendix C Further Details on Model Training,C4,training steps,C4-ORIGINAL and C4-EXACTSUBSTR,152,thousand steps,Printed as 152K steps for approximately two epochs
+appendix-c-c4-neardup-steps,C2,15,Appendix C Further Details on Model Training,C4,training steps,C4-NEARDUP,146,thousand steps,Printed as 146K steps for approximately two epochs
+appendix-c-c4-batch-size,C2,15,Appendix C Further Details on Model Training,C4,batch size,C4-ORIGINAL and C4-EXACTSUBSTR,4800,examples per batch,Printed with the 152K-step statement
+appendix-c-c4-epochs,C2,15,Appendix C Further Details on Model Training,C4,training duration,all model arms,2,epochs,Each model was trained for two epochs
+appendix-c-c4-original-hours,C2,15,Appendix C Further Details on Model Training,C4,XL training time,C4-ORIGINAL and C4-EXACTSUBSTR,131,hours,Approximately 131 hours on a 128-core TPU v3 pod slice
+appendix-c-c4-original-days,C2,15,Appendix C Further Details on Model Training,C4,XL training time,C4-ORIGINAL and C4-EXACTSUBSTR,5.5,days,Parenthetical conversion of approximately 131 hours
+appendix-c-c4-neardup-hours,C2,15,Appendix C Further Details on Model Training,C4,XL training time,C4-NEARDUP,126,hours,Approximately 126 hours on a 128-core TPU v3 pod slice
+appendix-d-c4-original-hours,C2,15,Appendix D Energy Consumption,C4,training time,XL-ORIGINAL,131,hours,Approximately 131 hours on a 128-core TPU v3
+appendix-d-c4-original-days,C2,15,Appendix D Energy Consumption,C4,training time,XL-ORIGINAL,5.5,days,Printed as 131 hours or 5.5 days
+appendix-d-c4-size-reduction,C2,15,Appendix D Energy Consumption,C4,deduplicated dataset size reduction,approximate deduplicated dataset,3.9,%,Printed as 3.9% smaller than the original dataset
+appendix-d-c4-neardup-hours-per-epoch,C2,15,Appendix D Energy Consumption,C4,deduplicated training time,approximate deduplicated dataset,63,hours per epoch,Context identifies the approximate deduplicated dataset; compare Appendix C NEARDUP timing
+appendix-d-c4-saved-hours,C2,15,Appendix D Energy Consumption,C4,compute time saved,two epochs,5,hours,Printed as around 5 hours
+table6-c4-original-days,C2,16,Table 6 row Training time (days),C4,XL training time,XL-ORIGINAL,5.47,days,Table 6 estimate
+table6-c4-neardup-days,C2,16,Table 6 row Training time (days),C4,XL training time,XL-NEARDUP,5.26,days,Table 6 estimate
+table6-c4-original-tpu-hours,C2,16,Table 6 row TPU hrs,C4,XL training compute,XL-ORIGINAL,16804.70,TPU hours,Table 6 estimate on 128 TPU v3 cores
+table6-c4-neardup-tpu-hours,C2,16,Table 6 row TPU hrs,C4,XL training compute,XL-NEARDUP,16149.31,TPU hours,Table 6 estimate on 128 TPU v3 cores
+table11-realnews-r01-total,C5,21,Table 11 RealNews row 1 medicalnewstoday.com.,RealNews,total URL examples,medicalnewstoday.com.,12,examples,URL filtered to at least 10 occurrences
+table11-realnews-r01-frac,C5,21,Table 11 RealNews row 1 medicalnewstoday.com.,RealNews,fraction marked near-duplicate,medicalnewstoday.com.,1.00,ratio,Frac Dups is a ratio not a printed percentage
+table11-realnews-r02-total,C5,21,Table 11 RealNews row 2 dodbuzz.com,RealNews,total URL examples,dodbuzz.com,301,examples,
+table11-realnews-r02-frac,C5,21,Table 11 RealNews row 2 dodbuzz.com,RealNews,fraction marked near-duplicate,dodbuzz.com,0.99,ratio,
+table11-realnews-r03-total,C5,21,Table 11 RealNews row 3 undertheradar.military.com,RealNews,total URL examples,undertheradar.military.com,187,examples,
+table11-realnews-r03-frac,C5,21,Table 11 RealNews row 3 undertheradar.military.com,RealNews,fraction marked near-duplicate,undertheradar.military.com,0.97,ratio,
+table11-realnews-r04-total,C5,21,Table 11 RealNews row 4 q.usatoday.com,RealNews,total URL examples,q.usatoday.com,33,examples,
+table11-realnews-r04-frac,C5,21,Table 11 RealNews row 4 q.usatoday.com,RealNews,fraction marked near-duplicate,q.usatoday.com,0.94,ratio,
+table11-realnews-r05-total,C5,21,Table 11 RealNews row 5 ad-test.thirdage.com,RealNews,total URL examples,ad-test.thirdage.com,354,examples,
+table11-realnews-r05-frac,C5,21,Table 11 RealNews row 5 ad-test.thirdage.com,RealNews,fraction marked near-duplicate,ad-test.thirdage.com,0.94,ratio,
+table11-realnews-r06-total,C5,21,Table 11 RealNews row 6 amp.nymag.com,RealNews,total URL examples,amp.nymag.com,15,examples,
+table11-realnews-r06-frac,C5,21,Table 11 RealNews row 6 amp.nymag.com,RealNews,fraction marked near-duplicate,amp.nymag.com,0.93,ratio,
+table11-realnews-r07-total,C5,21,Table 11 RealNews row 7 citizenwire.com,RealNews,total URL examples,citizenwire.com,1022,examples,
+table11-realnews-r07-frac,C5,21,Table 11 RealNews row 7 citizenwire.com,RealNews,fraction marked near-duplicate,citizenwire.com,0.93,ratio,
+table11-realnews-r08-total,C5,21,Table 11 RealNews row 8 paycheck-chronicles.military.com,RealNews,total URL examples,paycheck-chronicles.military.com,363,examples,
+table11-realnews-r08-frac,C5,21,Table 11 RealNews row 8 paycheck-chronicles.military.com,RealNews,fraction marked near-duplicate,paycheck-chronicles.military.com,0.92,ratio,
+table11-realnews-r09-total,C5,21,Table 11 RealNews row 9 product-reviews.net,RealNews,total URL examples,product-reviews.net,73403,examples,
+table11-realnews-r09-frac,C5,21,Table 11 RealNews row 9 product-reviews.net,RealNews,fraction marked near-duplicate,product-reviews.net,0.92,ratio,
+table11-realnews-r10-total,C5,21,Table 11 RealNews row 10 kitup.military.com,RealNews,total URL examples,kitup.military.com,196,examples,
+table11-realnews-r10-frac,C5,21,Table 11 RealNews row 10 kitup.military.com,RealNews,fraction marked near-duplicate,kitup.military.com,0.92,ratio,
+table11-realnews-r11-total,C5,21,Table 11 RealNews row 11 gcaptain.com,RealNews,total URL examples,gcaptain.com,33903,examples,
+table11-realnews-r11-frac,C5,21,Table 11 RealNews row 11 gcaptain.com,RealNews,fraction marked near-duplicate,gcaptain.com,0.92,ratio,
+table11-realnews-r12-total,C5,21,Table 11 RealNews row 12 dev.screenrant.com,RealNews,total URL examples,dev.screenrant.com,70,examples,
+table11-realnews-r12-frac,C5,21,Table 11 RealNews row 12 dev.screenrant.com,RealNews,fraction marked near-duplicate,dev.screenrant.com,0.91,ratio,
+table11-realnews-r13-total,C5,21,Table 11 RealNews row 13 live.swissinfo.ch,RealNews,total URL examples,live.swissinfo.ch,66,examples,
+table11-realnews-r13-frac,C5,21,Table 11 RealNews row 13 live.swissinfo.ch,RealNews,fraction marked near-duplicate,live.swissinfo.ch,0.91,ratio,
+table11-realnews-r14-total,C5,21,Table 11 RealNews row 14 news.theepochtimes.com,RealNews,total URL examples,news.theepochtimes.com,82,examples,
+table11-realnews-r14-frac,C5,21,Table 11 RealNews row 14 news.theepochtimes.com,RealNews,fraction marked near-duplicate,news.theepochtimes.com,0.87,ratio,
+table11-realnews-r15-total,C5,21,Table 11 RealNews row 15 opinion.toledoblade.com,RealNews,total URL examples,opinion.toledoblade.com,986,examples,
+table11-realnews-r15-frac,C5,21,Table 11 RealNews row 15 opinion.toledoblade.com,RealNews,fraction marked near-duplicate,opinion.toledoblade.com,0.87,ratio,
+table11-realnews-r16-total,C5,21,Table 11 RealNews row 16 cdn.moneytalksnews.com,RealNews,total URL examples,cdn.moneytalksnews.com,121,examples,
+table11-realnews-r16-frac,C5,21,Table 11 RealNews row 16 cdn.moneytalksnews.com,RealNews,fraction marked near-duplicate,cdn.moneytalksnews.com,0.86,ratio,
+table11-realnews-r17-total,C5,21,Table 11 RealNews row 17 amp.fox23.com,RealNews,total URL examples,amp.fox23.com,14,examples,
+table11-realnews-r17-frac,C5,21,Table 11 RealNews row 17 amp.fox23.com,RealNews,fraction marked near-duplicate,amp.fox23.com,0.86,ratio,
+table11-realnews-r18-total,C5,21,Table 11 RealNews row 18 sales.rollingstone.com,RealNews,total URL examples,sales.rollingstone.com,20,examples,
+table11-realnews-r18-frac,C5,21,Table 11 RealNews row 18 sales.rollingstone.com,RealNews,fraction marked near-duplicate,sales.rollingstone.com,0.85,ratio,
+table11-realnews-r19-total,C5,21,Table 11 RealNews row 19 ftp.screenrant.com,RealNews,total URL examples,ftp.screenrant.com,20,examples,
+table11-realnews-r19-frac,C5,21,Table 11 RealNews row 19 ftp.screenrant.com,RealNews,fraction marked near-duplicate,ftp.screenrant.com,0.85,ratio,
+table11-c4-r01-total,C3,21,Table 11 C4 row 1 hairtechkearney.com,C4,total URL examples,hairtechkearney.com,4883,examples,
+table11-c4-r01-frac,C3,21,Table 11 C4 row 1 hairtechkearney.com,C4,fraction marked near-duplicate,hairtechkearney.com,1,ratio,
+table11-c4-r02-total,C3,21,Table 11 C4 row 2 keywordsking.com,C4,total URL examples,keywordsking.com,1786,examples,
+table11-c4-r02-frac,C3,21,Table 11 C4 row 2 keywordsking.com,C4,fraction marked near-duplicate,keywordsking.com,1,ratio,
+table11-c4-r03-total,C3,21,Table 11 C4 row 3 sydneysitalianfruitshops.online,C4,total URL examples,sydneysitalianfruitshops.online,1178,examples,
+table11-c4-r03-frac,C3,21,Table 11 C4 row 3 sydneysitalianfruitshops.online,C4,fraction marked near-duplicate,sydneysitalianfruitshops.online,1,ratio,
+table11-c4-r04-total,C3,21,Table 11 C4 row 4 moewiki.usamimi.info,C4,total URL examples,moewiki.usamimi.info,1001,examples,
+table11-c4-r04-frac,C3,21,Table 11 C4 row 4 moewiki.usamimi.info,C4,fraction marked near-duplicate,moewiki.usamimi.info,1,ratio,
+table11-c4-r05-total,C3,21,Table 11 C4 row 5 swarovskijewelryoutlet.org,C4,total URL examples,swarovskijewelryoutlet.org,984,examples,
+table11-c4-r05-frac,C3,21,Table 11 C4 row 5 swarovskijewelryoutlet.org,C4,fraction marked near-duplicate,swarovskijewelryoutlet.org,1,ratio,
+table11-c4-r06-total,C3,21,Table 11 C4 row 6 forzadurto.org,C4,total URL examples,forzadurto.org,980,examples,
+table11-c4-r06-frac,C3,21,Table 11 C4 row 6 forzadurto.org,C4,fraction marked near-duplicate,forzadurto.org,1,ratio,
+table11-c4-r07-total,C3,21,Table 11 C4 row 7 producerati.com,C4,total URL examples,producerati.com,971,examples,
+table11-c4-r07-frac,C3,21,Table 11 C4 row 7 producerati.com,C4,fraction marked near-duplicate,producerati.com,1,ratio,
+table11-c4-r08-total,C3,21,Table 11 C4 row 8 sourceryforge.org,C4,total URL examples,sourceryforge.org,908,examples,
+table11-c4-r08-frac,C3,21,Table 11 C4 row 8 sourceryforge.org,C4,fraction marked near-duplicate,sourceryforge.org,1,ratio,
+table11-c4-r09-total,C3,21,Table 11 C4 row 9 heavenz-kitchen.com,C4,total URL examples,heavenz-kitchen.com,876,examples,
+table11-c4-r09-frac,C3,21,Table 11 C4 row 9 heavenz-kitchen.com,C4,fraction marked near-duplicate,heavenz-kitchen.com,1,ratio,
+table11-c4-r10-total,C3,21,Table 11 C4 row 10 little-eclipse.com,C4,total URL examples,little-eclipse.com,822,examples,
+table11-c4-r10-frac,C3,21,Table 11 C4 row 10 little-eclipse.com,C4,fraction marked near-duplicate,little-eclipse.com,1,ratio,
+table11-c4-r11-total,C3,21,Table 11 C4 row 11 walops.com,C4,total URL examples,walops.com,819,examples,
+table11-c4-r11-frac,C3,21,Table 11 C4 row 11 walops.com,C4,fraction marked near-duplicate,walops.com,1,ratio,
+table11-c4-r12-total,C3,21,Table 11 C4 row 12 16thstlaunderland.com,C4,total URL examples,16thstlaunderland.com,713,examples,
+table11-c4-r12-frac,C3,21,Table 11 C4 row 12 16thstlaunderland.com,C4,fraction marked near-duplicate,16thstlaunderland.com,1,ratio,
+table11-c4-r13-total,C3,21,Table 11 C4 row 13 theroyalstarinfo.com,C4,total URL examples,theroyalstarinfo.com,696,examples,
+table11-c4-r13-frac,C3,21,Table 11 C4 row 13 theroyalstarinfo.com,C4,fraction marked near-duplicate,theroyalstarinfo.com,1,ratio,
+table11-c4-r14-total,C3,21,Table 11 C4 row 14 code4kt.com,C4,total URL examples,code4kt.com,684,examples,
+table11-c4-r14-frac,C3,21,Table 11 C4 row 14 code4kt.com,C4,fraction marked near-duplicate,code4kt.com,1,ratio,
+table11-c4-r15-total,C3,21,Table 11 C4 row 15 nflfalconsjerseys.us,C4,total URL examples,nflfalconsjerseys.us,682,examples,
+table11-c4-r15-frac,C3,21,Table 11 C4 row 15 nflfalconsjerseys.us,C4,fraction marked near-duplicate,nflfalconsjerseys.us,1,ratio,
+table11-c4-r16-total,C3,21,Table 11 C4 row 16 quiltingbeeshop.com,C4,total URL examples,quiltingbeeshop.com,676,examples,
+table11-c4-r16-frac,C3,21,Table 11 C4 row 16 quiltingbeeshop.com,C4,fraction marked near-duplicate,quiltingbeeshop.com,1,ratio,
+table11-c4-r17-total,C3,21,Table 11 C4 row 17 ulifeinsurancemiami.com,C4,total URL examples,ulifeinsurancemiami.com,675,examples,
+table11-c4-r17-frac,C3,21,Table 11 C4 row 17 ulifeinsurancemiami.com,C4,fraction marked near-duplicate,ulifeinsurancemiami.com,1,ratio,
+table11-c4-r18-total,C3,21,Table 11 C4 row 18 wowkeyword.com,C4,total URL examples,wowkeyword.com,673,examples,
+table11-c4-r18-frac,C3,21,Table 11 C4 row 18 wowkeyword.com,C4,fraction marked near-duplicate,wowkeyword.com,1,ratio,
+table11-c4-r19-total,C3,21,Table 11 C4 row 19 taspetro.com,C4,total URL examples,taspetro.com,671,examples,Nineteenth printed row; the caption promises 20 URLs
+table11-c4-r19-frac,C3,21,Table 11 C4 row 19 taspetro.com,C4,fraction marked near-duplicate,taspetro.com,1,ratio,Nineteenth printed row; the caption promises 20 URLs
+table11-c4-r20-total,C3,21,Table 11 C4 promised row 20 absent from PDF,C4,total URL examples,UNRESOLVED,UNRESOLVED,examples,Structured sentinel for the missing twentieth row; URL identity and total are not printed and are not inferred
+table11-c4-r20-frac,C3,21,Table 11 C4 promised row 20 absent from PDF,C4,fraction marked near-duplicate,UNRESOLVED,UNRESOLVED,ratio,Structured sentinel for the missing twentieth row; URL identity and fraction are not printed and are not inferred
+fig1-c4-bin-01,C3,5,Figure 1 bin_index 1,C4,number of groups,not stated,348320475,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-02,C3,5,Figure 1 bin_index 2,C4,number of groups,not stated,1861744,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-03,C3,5,Figure 1 bin_index 3,C4,number of groups,not stated,292575,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-04,C3,5,Figure 1 bin_index 4,C4,number of groups,not stated,109853,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-05,C3,5,Figure 1 bin_index 5,C4,number of groups,not stated,54984,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-06,C3,5,Figure 1 bin_index 6,C4,number of groups,not stated,85567,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-07,C3,5,Figure 1 bin_index 7,C4,number of groups,not stated,42723,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-08,C3,5,Figure 1 bin_index 8,C4,number of groups,not stated,28446,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-09,C3,5,Figure 1 bin_index 9,C4,number of groups,not stated,23094,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-10,C3,5,Figure 1 bin_index 10,C4,number of groups,not stated,2782,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig1-c4-bin-11,C3,5,Figure 1 bin_index 11,C4,number of groups,not stated,280,groups,Exact bin label and bar label also recorded in figure-bars.csv
+fig8-lm1b-bin-01,C6,22,Figure 8 top panel bin_index 1,LM1B,number of groups,not stated,29096827,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-02,C6,22,Figure 8 top panel bin_index 2,LM1B,number of groups,not stated,595632,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-03,C6,22,Figure 8 top panel bin_index 3,LM1B,number of groups,not stated,68775,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-04,C6,22,Figure 8 top panel bin_index 4,LM1B,number of groups,not stated,15825,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-05,C6,22,Figure 8 top panel bin_index 5,LM1B,number of groups,not stated,4432,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-06,C6,22,Figure 8 top panel bin_index 6,LM1B,number of groups,not stated,2762,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-07,C6,22,Figure 8 top panel bin_index 7,LM1B,number of groups,not stated,340,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-08,C6,22,Figure 8 top panel bin_index 8,LM1B,number of groups,not stated,66,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-09,C6,22,Figure 8 top panel bin_index 9,LM1B,number of groups,not stated,13,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-10,C6,22,Figure 8 top panel bin_index 10,LM1B,number of groups,not stated,0,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-lm1b-bin-11,C6,22,Figure 8 top panel bin_index 11,LM1B,number of groups,not stated,0,groups,Panel letter (a) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-01,C5,22,Figure 8 middle panel bin_index 1,RealNews,number of groups,not stated,27917044,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-02,C5,22,Figure 8 middle panel bin_index 2,RealNews,number of groups,not stated,1715379,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-03,C5,22,Figure 8 middle panel bin_index 3,RealNews,number of groups,not stated,231913,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-04,C5,22,Figure 8 middle panel bin_index 4,RealNews,number of groups,not stated,89017,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-05,C5,22,Figure 8 middle panel bin_index 5,RealNews,number of groups,not stated,34487,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-06,C5,22,Figure 8 middle panel bin_index 6,RealNews,number of groups,not stated,24889,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-07,C5,22,Figure 8 middle panel bin_index 7,RealNews,number of groups,not stated,1150,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-08,C5,22,Figure 8 middle panel bin_index 8,RealNews,number of groups,not stated,243,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-09,C5,22,Figure 8 middle panel bin_index 9,RealNews,number of groups,not stated,129,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-10,C5,22,Figure 8 middle panel bin_index 10,RealNews,number of groups,not stated,11,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-realnews-bin-11,C5,22,Figure 8 middle panel bin_index 11,RealNews,number of groups,not stated,0,groups,Panel letter (b) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-01,C4,22,Figure 8 bottom panel bin_index 1,Wiki-40B,number of groups,not stated,3228888,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-02,C4,22,Figure 8 bottom panel bin_index 2,Wiki-40B,number of groups,not stated,3557,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-03,C4,22,Figure 8 bottom panel bin_index 3,Wiki-40B,number of groups,not stated,833,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-04,C4,22,Figure 8 bottom panel bin_index 4,Wiki-40B,number of groups,not stated,399,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-05,C4,22,Figure 8 bottom panel bin_index 5,Wiki-40B,number of groups,not stated,245,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-06,C4,22,Figure 8 bottom panel bin_index 6,Wiki-40B,number of groups,not stated,391,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-07,C4,22,Figure 8 bottom panel bin_index 7,Wiki-40B,number of groups,not stated,163,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-08,C4,22,Figure 8 bottom panel bin_index 8,Wiki-40B,number of groups,not stated,60,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-09,C4,22,Figure 8 bottom panel bin_index 9,Wiki-40B,number of groups,not stated,24,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-10,C4,22,Figure 8 bottom panel bin_index 10,Wiki-40B,number of groups,not stated,1,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv
+fig8-wiki40b-bin-11,C4,22,Figure 8 bottom panel bin_index 11,Wiki-40B,number of groups,not stated,0,groups,Panel letter (c) is a reading-order convention; see figure-bars.csv

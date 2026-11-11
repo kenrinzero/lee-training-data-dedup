@@ -1,0 +1,4 @@
+PASS: verified 3234610 clusters, all metrics, figures, input hashes, and UTF-8/LF outputs in results\stage1\run-004\audit
+PASS: Stage 2 identity receipt, histogram, 365233500 rows, figure gate, and UTF-8/LF outputs
+PASS: full Stage 2 split receipts, metrics, removals, cluster facts, random split, Table 11 ranking, and UTF-8/LF outputs
+PASS: Stage 3 direct released-table histogram and URL coverage, independent figures/ranking, source and verdict checks (32797763 rows; full_hash=True)

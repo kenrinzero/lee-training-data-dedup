@@ -1,0 +1,2 @@
+basis,printed_original,printed_neardup,derived_removals,derived_original_unrounded,derived_original_rounded,original_verdict,derived_retained,derived_retained_unrounded,derived_retained_rounded,neardup_verdict,direct_train_removal_verdict
+CONDITIONAL_RELEASE_POPULATION,31.16,28.39,2782768,32.797763,32.80,MISMATCH,30014995,30.014995,30.01,MISMATCH,NOT_EXECUTABLE_INPUT

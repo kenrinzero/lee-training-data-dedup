@@ -1,0 +1,57 @@
+{
+  "stage": "Stage 2 identity / run-002",
+  "created_at": "2026-11-09T13:45:29.219568+00:00",
+  "command": [
+    "python.exe",
+    "src/stage2_identity.py",
+    "--out-dir",
+    "results/stage2/run-002/audit"
+  ],
+  "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.5.4",
+  "pyarrow": "26.0.1",
+  "csv_parser": "Python csv.reader(strict=True), UTF-8, streamed tar member without full extraction",
+  "archive": {
+    "member": "c4.csv",
+    "decompressed_bytes": 30219354495,
+    "header": [
+      "id",
+      "keep",
+      "cluster"
+    ]
+  },
+  "inputs": [
+    {
+      "local_path": ".\\data\\raw\\clusters\\c4.tar.gz",
+      "url": "https://storage.googleapis.com/gresearch/data_deduplication/c4.tar.gz",
+      "bytes": 13872073006,
+      "expected_bytes": 13872073006,
+      "sha256": "5b73b507b3aa08c7dca5d5da55afe27babe6a4ddde40f4107ad1e88e82986723",
+      "expected_sha256": "5b73b507b3aa08c7dca5d5da55afe27babe6a4ddde40f4107ad1e88e82986723",
+      "acquired_at": "2026-11-09T12:49:12.869736+00:00",
+      "rights": "Cluster redistribution rights are unresolved; keep raw inputs local."
+    }
+  ],
+  "stage1_lock": {
+    "matching_conventions": [
+      "dropped"
+    ],
+    "locked_candidate_set": [
+      "dropped"
+    ],
+    "primary": "dropped",
+    "status": "PRIMARY_LOCKED",
+    "match_counts": {
+      "dropped": 11,
+      "low": 9,
+      "high": 9
+    },
+    "basis": "Wiki-40B Figure 8 bottom-panel printed fidelity only; C4 content was not opened"
+  },
+  "code_sha256": {
+    "src/stage1_audit.py": "8d49370a6aa213da76595b5671da458c6780fa466a8fefc89342505d963bdfae",
+    "src/stage2_identity.py": "1cf7a60e4edd341aa26d6e22adc4e55ce6c8c8c6f8f33b50e4cb7ebe6b8fcf74",
+    "src/verify_stage2.py": "c0e54d12bbcdbdb3ea159fa2c4396855f5c19abc440ac609882055b7357857b4"
+  }
+}

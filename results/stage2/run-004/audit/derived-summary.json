@@ -1,0 +1,50 @@
+{
+  "physical_rows": 365233500,
+  "unique_clusters": 350835689,
+  "split_join": {
+    "public_physical_counts": {
+      "train": 364868892,
+      "validation": 364608
+    },
+    "public_unique_keys": 365233500,
+    "duplicate_public_keys": 0,
+    "duplicate_public_rows": 0,
+    "cross_split_public_keys": 0,
+    "unmatched_released_rows": 0,
+    "cross_split_released_rows": 0,
+    "missing_public_keys": 0,
+    "missing_public_rows": 0,
+    "duplicate_released_urls": 0,
+    "duplicate_released_rows": 0,
+    "population_balance": {
+      "train": 364868892,
+      "validation": 364608
+    },
+    "expected_population_balance": {
+      "train": 364868892,
+      "validation": 364608
+    },
+    "status": "COMPLETE",
+    "estimand": "released-physical-row weighted"
+  },
+  "keep_agreement": {
+    "keep0_multi": 16913025,
+    "keep0_singleton": 0,
+    "keep1_multi": 0,
+    "keep1_singleton": 348320475
+  },
+  "keep_discrepancy_rows": 0,
+  "url_divergence_count": 0,
+  "divergence_status": "KEEP_MEMBERSHIP_AGREE",
+  "duplication": {
+    "TT": 16892539,
+    "EE": 5754,
+    "ET": 16756
+  },
+  "removals": {
+    "A": 14393547,
+    "B": 14381052,
+    "S": 16896263
+  },
+  "population": "released archive, all splits"
+}

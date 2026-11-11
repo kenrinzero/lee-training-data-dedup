@@ -1,0 +1,20 @@
+{
+  "table2_not_executable": 3,
+  "table13_basis": "CONDITIONAL_RELEASE_POPULATION",
+  "table13_original_verdict": "MISMATCH",
+  "table13_neardup_verdict": "MISMATCH",
+  "ceiling_verdict": "CEILING_COMPATIBLE",
+  "ceiling_removals": 2782768,
+  "figure_match_counts": {
+    "dropped": 11,
+    "low": 8,
+    "high": 8
+  },
+  "table11_total_matches": 0,
+  "table11_total_mismatches": 19,
+  "table11_frac_matches": 0,
+  "table11_frac_mismatches": 0,
+  "table11_frac_not_executable": 19,
+  "divergence_status": "KEEP_MEMBERSHIP_AGREE",
+  "duplicate_released_ids": 0
+}

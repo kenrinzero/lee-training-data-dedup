@@ -1,0 +1,9 @@
+{
+  "multi_documents": 4880719,
+  "multi_clusters": 2097951,
+  "removals": 2782768,
+  "physical_rows": 32797763,
+  "retained_release_population": 30014995,
+  "population": "released archive, all splits; not a verified public train population",
+  "formula": "U=D_multi-C_multi=sum_{c:n_all(c)>=2}(n_all(c)-1)"
+}

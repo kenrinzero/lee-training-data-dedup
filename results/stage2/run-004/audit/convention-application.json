@@ -1,0 +1,10 @@
+{
+  "primary": "dropped",
+  "faithful_figure_output": "figure-counts.csv convention=dropped",
+  "alternatives": "low/high retained as sensitivities",
+  "stage1_lock": "singleton dropped",
+  "c4_identity_matches": [
+    "dropped"
+  ],
+  "ambiguous_convention": false
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "frozen_at_utc": "2026-11-08T20:19:22Z",
+  "state": {
+    "label": "FROZEN v1",
+    "step0_complete": true,
+    "next_stage": "Stage 1",
+    "cluster_derived_estimate_ran": false,
+    "cluster_archive_downloaded_or_opened": false,
+    "full_dataset_downloaded": false,
+    "analysis_inputs_acquired": false
+  },
+  "working_files": [
+    "PREREGISTRATION.md",
+    "CLAIM_INVENTORY.md",
+    "STEP0_DERIVATIONS.md"
+  ],
+  "snapshot_files": [
+    "planning/preregistration-v1.md",
+    "planning/claim-inventory-v1.md",
+    "planning/step0-derivations-v1.md"
+  ],
+  "snapshot_byte_equality": {
+    "PREREGISTRATION.md": "planning/preregistration-v1.md",
+    "CLAIM_INVENTORY.md": "planning/claim-inventory-v1.md",
+    "STEP0_DERIVATIONS.md": "planning/step0-derivations-v1.md"
+  },
+  "independent_reviewer_approval": {
+    "spec": "PASS",
+    "quality": "APPROVED",
+    "ready_to_freeze": true,
+    "reviewer": "agent-5",
+    "context": "fresh context"
+  },
+  "sha256": {
+    "PREREGISTRATION.md": "491718a862062c54006f509b1a54f8e0583e0b3dfb9765d85935c0dc51d8914c",
+    "CLAIM_INVENTORY.md": "faf1846b3c6b413d95905a75245aa5f0e914ef36da12d7cf0f1c63b250e6dbd4",
+    "STEP0_DERIVATIONS.md": "e7cd7484b6eda077e8c26af063e30024b450e625ea10f9564fadabaf80d6d416",
+    "planning/preregistration-v1.md": "491718a862062c54006f509b1a54f8e0583e0b3dfb9765d85935c0dc51d8914c",
+    "planning/claim-inventory-v1.md": "faf1846b3c6b413d95905a75245aa5f0e914ef36da12d7cf0f1c63b250e6dbd4",
+    "planning/step0-derivations-v1.md": "e7cd7484b6eda077e8c26af063e30024b450e625ea10f9564fadabaf80d6d416",
+    "paper/targets/README.md": "0b475e7d28d81f83f2760b0050594a8698bd93221f001bcf3fd71437be432656",
+    "paper/targets/printed-targets.csv": "78381f32a1f3bf48489e35db1c191db83de7362c8b3d7bb6936c9f707d3d0212",
+    "paper/targets/figure-bars.csv": "adfa6dfb4d399245bf992a5de9103542c71c01903230b52b13321efe2b8b1067",
+    "planning/step0/arithmetic.md": "dd74783909ff309cf6091f253db817192530593e13dfc78da86e2d77f474b844",
+    "planning/step0/arithmetic.json": "4b7c99e6ae7252f1aad56e1b3dba2a8ba25822ea4ea5008ec7214020c9643581",
+    "data/raw/MANIFEST.md": "bfd8d213b98a3e69ae4f3dc8f3290547c8041c7db52338616988d97b268b16e1",
+    "paper/paper.pdf": "dcfa46d7aced43a97b9cf2ebd705919b65d4dd8a44d0914b1e646fe2d59ea8d3",
+    "planning/SEED-2026-09-30.md": "b20cbb510e44e36aa6e183087a3a4929e5706b94eef591e9d72b4c8049e259ab"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "stage": "Stage 3 acquisition / run-001",
+  "created_at": "2026-11-10T19:47:32.330577+00:00",
+  "download_attempts": 1,
+  "command": "curl --fail --location --continue-at - --output data/raw/clusters/realnews.tar.gz.part https://storage.googleapis.com/gresearch/data_deduplication/realnews.tar.gz",
+  "inputs": [
+    {
+      "local_path": ".\\data\\raw\\clusters\\realnews.tar.gz",
+      "url": "https://storage.googleapis.com/gresearch/data_deduplication/realnews.tar.gz",
+      "bytes": 1428191066,
+      "expected_bytes": 1428191066,
+      "sha256": "27b14ae911e3bb2632f2a087e84f24c0f5163786d77ff92e1bbfa9d47473046c",
+      "expected_sha256": "27b14ae911e3bb2632f2a087e84f24c0f5163786d77ff92e1bbfa9d47473046c",
+      "acquired_at": "2026-11-10T19:47:32.330577+00:00",
+      "rights": "Cluster redistribution rights are unresolved; keep raw inputs local and publish aggregates only."
+    }
+  ],
+  "archive": {
+    "member": "realnews.csv",
+    "decompressed_bytes": 3432651696,
+    "header": [
+      "id",
+      "keep",
+      "cluster"
+    ]
+  }
+}

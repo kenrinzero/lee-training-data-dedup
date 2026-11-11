@@ -1,0 +1,9 @@
+{
+  "printed_target": "table2-c4-valid-valid",
+  "printed_value": "1.59",
+  "expected_numerator": "5859223.55260572805972103758998352383330684415405889919380667",
+  "unrounded_percent": "1.60424045236971089993689998041897137948924295116929284794704",
+  "rounded_percent": "1.60",
+  "verdict": "MISMATCH",
+  "basis": "uniform fixed-size validation split; secondary random-split check, distinct from observed EE"
+}

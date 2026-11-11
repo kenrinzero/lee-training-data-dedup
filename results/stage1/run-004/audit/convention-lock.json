@@ -1,0 +1,16 @@
+{
+  "matching_conventions": [
+    "dropped"
+  ],
+  "locked_candidate_set": [
+    "dropped"
+  ],
+  "primary": "dropped",
+  "status": "PRIMARY_LOCKED",
+  "match_counts": {
+    "dropped": 11,
+    "low": 9,
+    "high": 9
+  },
+  "basis": "Wiki-40B Figure 8 bottom-panel printed fidelity only; C4 content was not opened"
+}

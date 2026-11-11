@@ -1,0 +1,6 @@
+data/raw/*
+!data/raw/MANIFEST.md
+paper/paper.pdf
+.venv/
+__pycache__/
+*.pyc

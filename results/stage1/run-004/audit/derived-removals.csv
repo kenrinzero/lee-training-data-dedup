@@ -1,0 +1,10 @@
+arm,rule,removals,retained
+validation,A,16304,2910232
+validation,B,15461,2911075
+validation,S,21148,2905388
+test,A,16340,2910196
+test,B,15461,2911075
+test,S,21148,2905388
+validation+test,A,16996,2909540
+validation+test,B,15461,2911075
+validation+test,S,21148,2905388

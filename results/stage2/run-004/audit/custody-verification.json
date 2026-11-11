@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "train_receipts": {
+    "shards": 1024,
+    "bytes": 326778635540,
+    "rows": 364868892
+  },
+  "train_source_metadata": "results\\stage2\\run-002\\train-source-metadata.json",
+  "train_source_metadata_sha256": "f68302d67a7d89eecb29cd1953e9bcac1b3ded4419c843a855c41033486a3232",
+  "acquisition_manifest": "results\\stage2\\run-002\\split-acquisition-manifest.json",
+  "acquisition_manifest_sha256": "ed8edd020923a1562c5771bb902d713f4422304ee983728b431a6b99eb1da806",
+  "derived_public_db": {
+    "path": ".\\results\\stage2\\run-002\\work\\public.duckdb",
+    "bytes": 14786244608,
+    "sha256": "f0fc381d48dcb2f25f8f1121980b8f8f0bc030a86857f21e9e6cdb44a7751297"
+  },
+  "validation_inputs": [
+    {
+      "local_path": ".\\data\\raw\\c4\\en\\validation-00000.parquet",
+      "url": "https://huggingface.co/api/datasets/allenai/c4/parquet/en/validation/0.parquet",
+      "bytes": 311994499,
+      "expected_bytes": 311994499,
+      "sha256": "709bd820dacbaeb50025a0ebf5bfd311745b5a90cd6941887a01b1faf00ff285",
+      "expected_sha256": "709bd820dacbaeb50025a0ebf5bfd311745b5a90cd6941887a01b1faf00ff285",
+      "acquired_at": "2026-11-09T13:50:11.103454+00:00",
+      "rights": "C4 is ODC-BY; keep source files local."
+    },
+    {
+      "local_path": ".\\data\\raw\\c4\\en\\validation-00001.parquet",
+      "url": "https://huggingface.co/api/datasets/allenai/c4/parquet/en/validation/1.parquet",
+      "bytes": 197281279,
+      "expected_bytes": 197281279,
+      "sha256": "6f276e569450e157cad26d67d7623f82f512b2a67d317188b7717b29c6da565f",
+      "expected_sha256": "6f276e569450e157cad26d67d7623f82f512b2a67d317188b7717b29c6da565f",
+      "acquired_at": "2026-11-09T13:50:20.432054+00:00",
+      "rights": "C4 is ODC-BY; keep source files local."
+    }
+  ]
+}

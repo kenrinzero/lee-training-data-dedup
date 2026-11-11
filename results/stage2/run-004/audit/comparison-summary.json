@@ -1,0 +1,12 @@
+{
+  "table2_matches": 1,
+  "table2_mismatches": 2,
+  "table2_indeterminate": 0,
+  "table13_matches": 1,
+  "section5_matches": 3,
+  "table11_total_matches": 0,
+  "table11_frac_matches": 0,
+  "table11_source_missing_rows": 1,
+  "join_status": "COMPLETE",
+  "divergence_status": "KEEP_MEMBERSHIP_AGREE"
+}

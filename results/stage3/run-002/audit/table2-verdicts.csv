@@ -1,0 +1,4 @@
+target_id,metric,printed_value,derived_numerator,derived_denominator,unrounded_percent,rounded_percent,verdict,reason
+table2-realnews-train-train,TT,13.63,,,,,NOT_EXECUTABLE_INPUT,no pinned exact public original size or RealNews split mapping
+table2-realnews-valid-valid,EE,1.25,,,,,NOT_EXECUTABLE_INPUT,no pinned exact public original size or RealNews split mapping
+table2-realnews-valid-train,ET,14.35,,,,,NOT_EXECUTABLE_INPUT,no pinned exact public original size or RealNews split mapping

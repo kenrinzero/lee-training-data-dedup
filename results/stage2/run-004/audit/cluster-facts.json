@@ -1,0 +1,10 @@
+{
+  "pair_clusters": 1861744,
+  "multi_clusters": 2515214,
+  "pair_majority": true,
+  "clusters_over_5000": 280,
+  "clusters_size_5000": 0,
+  "largest_cluster_size": 250933,
+  "singleton_documents": 348320475,
+  "multi_cluster_documents": 16913025
+}

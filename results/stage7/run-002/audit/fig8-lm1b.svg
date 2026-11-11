@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig8-lm1b-dropped-title fig8-lm1b-dropped-desc" viewBox="0 0 1000 677">
+<title id="fig8-lm1b-dropped-title">Figure 8 top — LM1B (printed only)</title>
+<desc id="fig8-lm1b-dropped-desc">Eleven printed-only horizontal bars. No LM1B cluster archive is pinned; the released endpoint returned 404. Bars remain printed-only and no edge convention is inferred.</desc>
+<text class="chart-title" x="126" y="28">Figure 8 top — LM1B (printed only)</text>
+<line class="axis" x1="126" y1="52" x2="126" y2="634"/>
+<text class="bin-label" x="114" y="81" text-anchor="end">1</text>
+<rect class="bar" data-count="29096827" x="126" y="67" width="620.0" height="24" rx="2"/>
+<text class="value-label" x="760" y="84">29,096,827</text>
+<text class="bin-label" x="114" y="133" text-anchor="end">2</text>
+<rect class="bar" data-count="595632" x="126" y="119" width="479.711" height="24" rx="2"/>
+<text class="value-label" x="760" y="136">595,632</text>
+<text class="bin-label" x="114" y="185" text-anchor="end">3</text>
+<rect class="bar" data-count="68775" x="126" y="171" width="401.832" height="24" rx="2"/>
+<text class="value-label" x="760" y="188">68,775</text>
+<text class="bin-label" x="114" y="237" text-anchor="end">4</text>
+<rect class="bar" data-count="15825" x="126" y="223" width="348.83" height="24" rx="2"/>
+<text class="value-label" x="760" y="240">15,825</text>
+<text class="bin-label" x="114" y="289" text-anchor="end">5</text>
+<rect class="bar" data-count="4432" x="126" y="275" width="302.921" height="24" rx="2"/>
+<text class="value-label" x="760" y="292">4,432</text>
+<text class="bin-label" x="114" y="341" text-anchor="end">[6, 10)</text>
+<rect class="bar" data-count="2762" x="126" y="327" width="285.866" height="24" rx="2"/>
+<text class="value-label" x="760" y="344">2,762</text>
+<text class="bin-label" x="114" y="393" text-anchor="end">[11, 20)</text>
+<rect class="bar" data-count="340" x="126" y="379" width="210.389" height="24" rx="2"/>
+<text class="value-label" x="760" y="396">340</text>
+<text class="bin-label" x="114" y="445" text-anchor="end">[21, 50)</text>
+<rect class="bar" data-count="66" x="126" y="431" width="151.687" height="24" rx="2"/>
+<text class="value-label" x="760" y="448">66</text>
+<text class="bin-label" x="114" y="497" text-anchor="end">[51, 500)</text>
+<rect class="bar" data-count="13" x="126" y="483" width="95.206" height="24" rx="2"/>
+<text class="value-label" x="760" y="500">13</text>
+<text class="bin-label" x="114" y="549" text-anchor="end">[501, 5000)</text>
+<rect class="bar" data-count="0" x="126" y="535" width="0" height="24" rx="2"/>
+<text class="value-label" x="760" y="552">0</text>
+<text class="bin-label" x="114" y="601" text-anchor="end">[5001, ∞)</text>
+<rect class="bar" data-count="0" x="126" y="587" width="0" height="24" rx="2"/>
+<text class="value-label" x="760" y="604">0</text>
+<text class="axis-label" x="126" y="667">0</text>
+<text class="axis-label" x="746" y="667" text-anchor="end">log10(groups + 1) = 7.464</text>
+</svg>
