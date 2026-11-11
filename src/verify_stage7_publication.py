@@ -122,7 +122,8 @@ class PublicationContractTests(unittest.TestCase):
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         self.assertEqual(module.verify_freeze_contract(self.out)["exact_hash_files_verified"], 11)
-        self.assertEqual(module.verify_freeze_contract(ROOT)["exact_hash_files_verified"], 12)
+        expected = 12 if (ROOT / "paper/paper.pdf").is_file() else 11
+        self.assertEqual(module.verify_freeze_contract(ROOT)["exact_hash_files_verified"], expected)
 
     def test_provenance_byte_identical_labels(self):
         provenance = read_json(self.out / "PACKAGE-PROVENANCE.json")

@@ -61,8 +61,8 @@
       "sha256": "010fcdd49390d4573ecdf6176f9f1350114df57ceb865d9337b6cee955779c12"
     },
     "PACKAGE-PROVENANCE.json": {
-      "bytes": 30187,
-      "sha256": "f655228f2926ad6428e45bd5d247d9745954a0c3908b382fa98b3cf7b50688a9"
+      "bytes": 30218,
+      "sha256": "407ff8c15765bac80d2902f6d4187c9fffa1bc4d51af239afe702822bdfcde77"
     },
     "paper/PROVENANCE.md": {
       "bytes": 2383,
@@ -637,8 +637,8 @@
       "sha256": "54f20094a5b5c19246528536c5d428bbba673895955748919233d6e724ed6a79"
     },
     "src/stage7_publication.py": {
-      "bytes": 28361,
-      "sha256": "0888d21b116bdf819182b6ff4301015fb90fad968034152a07248cdceb5550f2"
+      "bytes": 28419,
+      "sha256": "66fed6e49a80bf3c4357c914ad870d41f1508d9fcfcc7b57652f410d1a94628f"
     },
     "src/verify_stage1.py": {
       "bytes": 9185,
@@ -669,8 +669,8 @@
       "sha256": "60a4e206f6b890210a6b08d1b7953b2487db8381aac79d0bc6a624a30c625ea8"
     },
     "src/verify_stage7_publication.py": {
-      "bytes": 8309,
-      "sha256": "f75bbe8dfa69b43ad6d6ebfb3e49c93038c442e86c7294dc663f38a832bb3086"
+      "bytes": 8385,
+      "sha256": "00ff6dd882b6dd054bd41667642e7cd1cad0231aa0715dd9a7e7bcd2b289628d"
     },
     "STEP0_DERIVATIONS.md": {
       "bytes": 20032,

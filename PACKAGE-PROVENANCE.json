@@ -732,7 +732,7 @@
     {
       "source": "src/stage7_publication.py",
       "exported": "src/stage7_publication.py",
-      "transform": "byte-identical allowlisted copy"
+      "transform": "VCS-aware publication verification"
     },
     {
       "source": "src/verify_stage1.py",
@@ -772,7 +772,7 @@
     {
       "source": "src/verify_stage7_publication.py",
       "exported": "src/verify_stage7_publication.py",
-      "transform": "byte-identical allowlisted copy"
+      "transform": "public checkout test portability and VCS-aware verification"
     },
     {
       "source": "results/stage7/run-002/audit/index.html",

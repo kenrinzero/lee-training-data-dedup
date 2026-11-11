@@ -479,7 +479,7 @@ class ReaderLinks(HTMLParser):
 def verify_publication(root, run_dir):
     root = Path(root).resolve()
     run_dir = Path(run_dir)
-    before = {path.relative_to(run_dir).as_posix(): path.read_bytes() for path in run_dir.rglob("*") if path.is_file()}
+    before = {path.relative_to(run_dir).as_posix(): path.read_bytes() for path in run_dir.rglob("*") if path.is_file() and ".git" not in path.parts}
     required = ("index.html", "README.md", "REPORT.md", "AUDIT.md", "CREDITS.md", "LICENSE", "REPORT-LICENSE", "THIRD_PARTY_NOTICES.md", "EXCLUDED-FILES.md", "PACKAGE-MANIFEST.json", "PACKAGE-PROVENANCE.json")
     for relative in required:
         assert (run_dir / relative).is_file(), f"missing publication file: {relative}"
@@ -528,7 +528,7 @@ def verify_publication(root, run_dir):
         assert len(content) == receipt["bytes"], f"package byte receipt changed: {relative}"
         from hashlib import sha256 as hash_sha256
         assert hash_sha256(content).hexdigest() == receipt["sha256"], f"package hash receipt changed: {relative}"
-    after = {path.relative_to(run_dir).as_posix(): path.read_bytes() for path in run_dir.rglob("*") if path.is_file()}
+    after = {path.relative_to(run_dir).as_posix(): path.read_bytes() for path in run_dir.rglob("*") if path.is_file() and ".git" not in path.parts}
     assert before == after, "publication verification modified files"
     print(f"PASS: publication package {len(before)} files, {link_count} root/nested relative links, privacy, receipts, UTF-8/LF verified without modification: {run_dir}")
 
