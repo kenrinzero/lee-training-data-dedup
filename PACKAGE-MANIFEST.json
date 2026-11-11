@@ -637,8 +637,8 @@
       "sha256": "e40a261dc6f223a3b6f2ea0ad1a9edd72ccdc61106c71705c9b3cc12b64b78da"
     },
     "src/stage7_publication.py": {
-      "bytes": 29771,
-      "sha256": "ffd35cf677da860e90de7e8064156d788e6236355f5cdd8237d8ca0088bd43af"
+      "bytes": 30178,
+      "sha256": "632d6bfa81ace78203289e9de676cc7899c755ad8672ed418047f10e52c0f89b"
     },
     "src/verify_stage1.py": {
       "bytes": 9185,

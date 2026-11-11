@@ -59,7 +59,7 @@ def path_variants(root):
 
 def sanitize_text(text, root):
     stripped = text.strip()
-    if stripped.lower().endswith("python.exe") and "users" in stripped.lower() and (":\\" in stripped or ":/" in stripped):
+    if stripped.lower().endswith("python.exe") and (":\\" in stripped or ":/" in stripped):
         return "python.exe"
     for prefix in path_variants(root):
         text = text.replace(prefix, ".")
@@ -124,7 +124,11 @@ def refresh_run_receipts(out_dir):
     )
     build_text = build_text.replace(
         '        "postfreeze_manifest": {"bytes": manifest.stat().st_size, "sha256": sha256(manifest)},\n    }',
-        '        "postfreeze_manifest": {"bytes": manifest.stat().st_size, "sha256": sha256(manifest)},\n        "excluded_sources": ["paper/paper.pdf"],\n    }',
+        '        "postfreeze_manifest": {"bytes": manifest.stat().st_size, "sha256": sha256(manifest)},\n        "excluded_sources": [] if (root / "paper/paper.pdf").is_file() else ["paper/paper.pdf"],\n    }',
+    )
+    build_text = build_text.replace(
+        '        "excluded_sources": ["paper/paper.pdf"],',
+        '        "excluded_sources": [] if (root / "paper/paper.pdf").is_file() else ["paper/paper.pdf"],',
     )
     language_helper = '''def publication_language(text):
     replacement = "This package redistributes code and aggregate results only; raw inputs and the source PDF are not included."
@@ -167,8 +171,11 @@ def verify_manifest_outputs(run_dir, manifest):'''
         stage7_dir = out_dir / stage7_relative
         input_path = stage7_dir / "input-manifest.json"
         inputs = read_json(input_path)
-        inputs["freeze"]["excluded_sources"] = ["paper/paper.pdf"]
-        inputs["freeze"]["exact_hash_files_verified"] = 11
+        if (out_dir / "paper/paper.pdf").is_file():
+            inputs["freeze"].pop("excluded_sources", None)
+        else:
+            inputs["freeze"]["excluded_sources"] = ["paper/paper.pdf"]
+        inputs["freeze"]["exact_hash_files_verified"] = 12 if (out_dir / "paper/paper.pdf").is_file() else 11
         for stage, relative in ACCEPTED_RUNS.items():
             manifest_path = out_dir / relative / "run-manifest.json"
             manifest = read_json(manifest_path)
